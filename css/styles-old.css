@@ -1,0 +1,293 @@
+
+@font-face {
+  font-family: BehindBlueEyes;
+  src: url(../font/BehindBlueEyes.otf);
+}
+
+
+body {
+  height: 1080px;
+  background-size: 100% 100%;
+  background-image: linear-gradient(to bottom, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c);
+}
+
+a {
+  text-decoration: none;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, p, button{
+  color: #777777;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+p{
+  font-size: 1.3em;
+  font-weight: 300;
+}
+a, span {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+a{
+  cursor: pointer;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: fixed;
+  right: 0;
+  /*background-color: #777;*/
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /*float: right;*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #2278a3   ;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  /*background-color: #7D388C;*/
+  color: white;
+}
+
+.text-white{
+  color:white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+#guarda-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+
+.logo {
+  background-image: url("../img/wit-logo-completo.png");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  position: absolute;
+  left: 33vw;
+  top: 20vw;
+  height: 50%;
+  width: 50%;
+}
+
+.hello {
+  background-image: url("../img/hello.png");
+  background-repeat: no-repeat;
+  /*background-size: 50% 50%;*/
+  position: absolute;
+  left: 10vw;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+  transition: 1.5s;
+}
+
+.estas-en {
+  font-size: 2vw;
+  /* color: #D9D9D9; */
+  color: #FFF;
+  position: absolute;
+  /*left: 17%;*/
+  /*top: 19%;*/
+  left: 33vw;
+  top: 20vw;
+  font-family: 'Fira Sans', sans-serif;
+  /*font-family: 'Happy Monkey', sans-serif;*/
+  font-weight: 900;
+  /*letter-spacing: 2px;*/
+}
+
+.estas-en img {
+    height: 60%;
+    width: 60%;
+}
+
+.recuadro {
+  font-size: 1vw;
+  width: 25%;
+  color: #D9D9D9;
+  position: absolute;
+  /*left: 17%;*/
+  /*top: 65%;*/
+  left: 60vw;
+  top: 20vw;
+  text-align: justify;
+  /*font-family: 'Permanent Marker', cursive*/
+}
+
+
+.paragraph {
+  color: #777;
+  background-color: #D9D9D9;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-family: "BehindBlueEyes", sans-serif;
+  transition: 0.5s;
+  color: #FFFFFF;
+  
+}
+
+#guarda-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+#your-station {
+  z-index: 100;
+  bottom: 0;
+  left:15%;
+  position: fixed;
+  transition: 0.5s;
+  height: 172px;
+}
+
+#your-station div{
+  z-index: 100;
+  float: left;
+  font-size: 5vw;
+  margin-top: 85px;
+  position: relative
+}
+
+.social-networks {
+  z-index: 100;
+  position: fixed;
+  right: 15%;
+  bottom: 15px;
+  transition: 0.5s;
+}
+
+.social-networks img{
+  z-index: 100;
+  float: left;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+  
+  /*.social-networks {*/
+    /*z-index: 100;*/
+    /*position: fixed;*/
+    /*left: 0!important;*/
+    /*bottom: 0;*/
+    /*transition: 0.5s;*/
+  /*}*/
+  
+  /*.social-networks img{*/
+    /*z-index: 100;*/
+    /*float: none;*/
+    /*position: relative;*/
+    /*transition: 0.5s;*/
+  /*}*/
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 425px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+  
+  .social-networks {
+    z-index: 100;
+    position: fixed;
+    left: 0!important;
+    bottom: 0;
+    transition: 0.5s;
+  }
+  
+  .social-networks img{
+    z-index: 100;
+    float: none;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .hello {
+    display: none;
+  }
+  
+  .estas-en {
+    font-size: 2vw;
+    /* color: #D9D9D9; */
+    color: #FFF;
+    position: absolute;
+    /*left: 17%;*/
+    /*top: 19%;*/
+    left: 33vw;
+    top: 20vw;
+    font-family: 'Fira Sans', sans-serif;
+    /*font-family: 'Happy Monkey', sans-serif;*/
+    font-weight: 900;
+    /*letter-spacing: 2px;*/
+  }
+  
+  .estas-en img {
+    height: 60%;
+    width: 60%;
+  }
+  
+  .recuadro {
+    font-size: 1vw;
+    width: 25%;
+    color: #D9D9D9;
+    position: absolute;
+    /*left: 17%;*/
+    /*top: 65%;*/
+    left: 60vw;
+    top: 20vw;
+    text-align: justify;
+    /*font-family: 'Permanent Marker', cursive*/
+  }
+}

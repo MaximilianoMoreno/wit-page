@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wit English Learning Station</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header>
+      <img id="guarda-superior" src="img/guardasuperior.png" alt="">
+      <div class="topnav">
+        <a href="#contacto">Contactanos</a>
+        <a href="#inscripcion">Pre-inscripci&oacute;n</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#biblioteca">Biblioteca</a>
+        <a href="#clil">CLIL</a>
+        <a class="active" href="#home">Inicio</a>
+      </div>
+    </header>
+    
+    <section>
+  
+      <div class="bgimg-1" id="home">
+        
+        <div class="hello" ></div>
+    
+        <div class="logo"></div>
+    
+        <div class="estas-en">
+          Est&aacute;s en
+        </div>
+    
+        <div class="recuadro">
+          En Wit English queremos que aprendas ingl&eacute;s de una manera din&aacute;mica, divertida y natural. Nuestro
+          <strong>enfoque comunicativo</strong> basado en <strong>CLIL</strong> permite que en nuestras aulas se
+          promueva la adquisici&oacute;n de conocimientos espec&iacute;ficos y del idioma ingl&eacute;s de forma simult&aacute;nea;
+          y, por lo tanto, se desarrollen procesos cognitivos, afectivos y psicomotrices necesarios para comunicar.
+        </div>
+    
+        <div>
+    
+    
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer>
+      <img id="guarda-inferior" src="img/guardainferior.png" alt="">
+      
+      <div class="footer-info">
+        <div id="your-station">
+          <div>#WitYourStation</div>
+          <img src="img/wityourstation-img.svg" alt="">
+        </div>
+        
+        <div class="social-networks">
+          <img src="img/whatsapp.svg" alt="">
+          <img src="img/facebook.svg" alt="">
+          <img src="img/instagram.svg" alt="">
+        </div>
+      </div>
+    </footer>
+  
+    
+  
+  
+  
+  
+  
+  </body>
+
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("guarda-superior").style.top = "-6vw";
+        document.getElementById("guarda-inferior").style.bottom = "-6vw";
+        document.getElementById("your-station").style.bottom = "-172px";
+        document.getElementsByClassName("social-networks")[0].style.right = "2%";
+        document.getElementsByClassName("hello")[0].style.left = "-100%";
+      } else {
+        document.getElementById("guarda-superior").style.top = "0 ";
+        document.getElementById("guarda-inferior").style.bottom = "0";
+        document.getElementById("your-station").style.bottom = "0";
+        document.getElementsByClassName("social-networks")[0].style.right = "15%";
+        document.getElementsByClassName("hello")[0].style.left = "10vw";
+      }
+    }
+  </script>
+  
+  <script>
+    AOS.init();
+  </script>
+
+</html>

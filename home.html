@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Wit English Learning Station</title>
+  
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link rel="icon" href="img/wit-logo-color.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header class="container">
+    <img class="row" id="guarda-superior" src="img/guardasuperior.png" alt="">
+    <div class="row">
+      
+      <div class="col-sm-12  topnav">
+        <a class="col" href="#contacto">Contactanos</a>
+        <a class="col" href="preinscripcion.html">Pre-inscripci&oacute;n</a>
+        <a class="col" href="#cursos">Cursos</a>
+        <!--<a class="col" href="#cursos">Cursos</a>-->
+        <!--<a class="col" href="#biblioteca">Biblioteca</a>-->
+        <!--<a class="col" href="#clil">CLIL</a>-->
+        <a class="col active" href="#home">Inicio</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    
+    <div class="row bgimg-1" id="home">
+      <div class="contenedor-home">
+        <img class="hello col-sm-3" src="img/hello.png" alt="">
+        
+        <div class="col-md-offset-3 estas-en col-md-4">
+          <div>
+            Est&aacute;s en
+          </div>
+          <img class="logo col-md-3" src="img/wit-logo-completo.png" alt="">
+        </div>
+        
+        <div class="recuadro logo col-md-5 col-xs-12">
+          En Wit English queremos que aprendas ingl&eacute;s de una manera din&aacute;mica, divertida y natural. Nuestro
+          <strong>enfoque comunicativo</strong> basado en <strong>CLIL</strong> permite que en nuestras aulas se
+          promueva la adquisici&oacute;n de conocimientos espec&iacute;ficos y del idioma ingl&eacute;s de forma simult&aacute;nea;
+          y, por lo tanto, se desarrollen procesos cognitivos, afectivos y psicomotrices necesarios para comunicar.
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 iframe-container align-self-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eCpuownLOB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    
+    <div class="row" id="cursos">
+      <div class="recuadro cursos col-lg-12">
+        En Wit English, preparamos a nuestros estudiantes para el mundo del siglo 21, donde las personas trabajan en equipo,
+        usan una lengua extranjera para comunicarse con personas de distintos pa&iacute;ses, son capaces de resolver problemas y descubrir
+        el mundo por ellos mismos utilizando diversos recursos y herramientas adquiridos en clases. Preparamos a los j&oacute;venes del futuro
+        y brindamos los primeros pasos para un aprendizaje independiente.
+      </div>
+      
+      <div class="curso col-md-offset-1 col-md-3 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/wit-little-ones.png" alt="">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="little-btn" onclick="mostrarTextoCurso('little')">conocer +</button>
+          <span class="row texto-curso" id="little-texto">Programa especializado para niños de 4 a 7 años que permite potenciar sus posibilidades motoras, cognitivas y lingüísticas a través del juego.</span>
+        </div>
+      </div>
+      
+      <div class="curso col-md-3 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/wit-kids.png" alt="">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="kids-btn" onclick="mostrarTextoCurso('kids')">conocer +</button>
+          <span class="row texto-curso" id="kids-texto">Programa especializado para niños de 7 a 13 que permite potenciar sus habilidades cognitivas y lingüísticas a través del juego y la exploración de nuevos conocimientos asociado a diferentes disciplinas.</span>
+        </div>
+      </div>
+      
+      <div class="curso col-md-3 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/wit-adults.png" alt="">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="adults-btn" onclick="mostrarTextoCurso('adults')">conocer +</button>
+          <span class="row texto-curso" id="adults-texto">Programa especializado para adultos que permite potenciar sus habilidades cognitivas y lingüísticas a través del juego y la exploración de nuevos conocimientos asociado a diferentes disciplinas.</span>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="contact-form" id="contacto">
+      <div class="contact-image">
+        <img src="img/wit-logo.png" alt="wit_logo"/>
+      </div>
+       <script type="text/javascript">var submitted=false;</script>
+       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {alert('Mensaje Enviado');window.location='http://witenglish.com.ar/';}"></iframe>
+      
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLScSzjjwOOkTY8hp_64nzFKJrGxgKfvx-SjzkUrYl1foCGlyaA/formResponse"
+             method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <h3>Dejanos tu mensaje</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="entry.466487952" required class="form-control" placeholder="Tu nombre *" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="entry.138067849" required class="form-control" placeholder="Tu e-mail *" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="entry.2032325000" class="form-control" placeholder=" Tu tel&eacute;fono" value="" />
+            </div>
+            <div class="form-group">
+              <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <textarea name="entry.1454254950" class="form-control" placeholder="Dejanos tu mensaje y nos contactaremos con vos a la brevedad." style="width: 100%; height: 150px;"></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <footer class="row">
+    <img id="guarda-inferior" src="img/guardainferior.png" alt="">
+    
+    <div class="row footer-info">
+      <div class="col-sm-offset-3 col" id="your-station">
+        <div>#WitYourStation</div>
+        <img src="img/wityourstation-img.svg" alt="">
+      </div>
+      
+      <div class="social-networks">
+        <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" offset="5" data-content="Encontranos en 261 6 611231">
+          <img src="img/whatsapp.svg" alt="">
+          
+        </a>
+        <a href="https://www.facebook.com/WitEnglish/" target="_blank">
+          <img src="img/facebook.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/wit_english82/" target="_blank">
+          <img src="img/instagram.svg" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function () {
+    scrollFunction()
+  };
+  
+  function scrollFunction() {
+    var hello = document.getElementsByClassName("hello")[0];
+    
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("guarda-superior").style.top = "-6vw";
+      document.getElementById("guarda-inferior").style.bottom = "-6vw";
+      document.getElementById("your-station").style.bottom = "-172px";
+      document.getElementsByClassName("social-networks")[0].style.right = "2%";
+      // document.getElementsByClassName("hello")[0].style.left = "-100vw !important";
+      hello.classList.add("hide-left");
+    } else {
+      document.getElementById("guarda-superior").style.top = "0 ";
+      document.getElementById("guarda-inferior").style.bottom = "0";
+      document.getElementById("your-station").style.bottom = "0";
+      document.getElementsByClassName("social-networks")[0].style.right = "15%";
+      hello.classList.remove( "hide-left");
+    }
+  }
+
+  function mostrarTextoCurso(idCurso) {
+    var button = document.getElementById(`${idCurso}-btn`);
+    var text = document.getElementById(`${idCurso}-texto`);
+  
+    if (text.style.display === "flex") {
+      button.classList.remove("active");
+      button.innerHTML = "conocer +";
+      text.style.display = "none";
+    } else {
+      button.classList.add("active");
+      button.innerHTML = "mostrar -";
+      text.style.display = "flex";
+    }
+  }
+  
+  
+  
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+</html>
