@@ -163,6 +163,11 @@ header {
   width: 100%;
 }
 
+#cursos h2 {
+  text-align: center;
+  color: #fff;
+}
+
 .recuadro {
   font-size: 1.2vw;
   color: #D9D9D9;
@@ -227,6 +232,11 @@ footer {
   right: 15%;
   bottom: 15px;
   transition: 0.5s;
+}
+
+.social-networks a {
+  display: inline-block;
+  width: 55px;
 }
 
 .social-networks img {
@@ -295,7 +305,7 @@ footer {
 }
 
 .contact-form form {
-  padding: 12%;
+  padding: 12% 12% 0;
 }
 
 .contact-form form .row {
@@ -305,6 +315,15 @@ footer {
 .contact-form h3 {
   margin-bottom: 8%;
   margin-top: -10%;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-telefono {
+  margin: 5% 10% 10% 10%;
+}
+
+.contact-telefono h3, .contact-telefono h2 {
   text-align: center;
   color: #fff;
 }
@@ -355,6 +374,7 @@ footer {
     transition: 0.5s;
     z-index: 0;
     height: 25%;
+    width: 103%;
   }
   
   #guarda-inferior {
@@ -364,6 +384,7 @@ footer {
     transition: 0.5s;
     z-index: 0;
     height: 25%;
+    width: 103%;
   }
   
   .hello {
@@ -373,7 +394,7 @@ footer {
   .estas-en {
     font-size: 7vw;
     color: #FFF;
-    top: 20vw;
+    top: 0;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 900;
   }
@@ -423,6 +444,14 @@ footer {
     background-attachment: scroll;
   }
   
+  #guarda-superior {
+    width: auto;
+  }
+  
+  #guarda-inferior {
+    width: auto;
+  }
+  
   .social-networks {
     z-index: 100;
     position: fixed;
@@ -445,7 +474,7 @@ footer {
   .estas-en {
     font-size: 5vw;
     color: #FFF;
-    top: 20vw;
+    top: 15vw;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 900;
   }
