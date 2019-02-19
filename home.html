@@ -9,9 +9,10 @@
   <link rel="icon" href="img/wit-logo-color.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description" CONTENT="Enseñanza de lengua inglesa,  Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
   <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -22,7 +23,8 @@
       
       <div class="col-sm-12  topnav">
         <a class="col" href="#contacto">Contactanos</a>
-        <a class="col" href="#cursos">Cursos</a>
+        <a class="col" href="#cursos">Programas</a>
+        <a class="col" href="#clil">CLIL</a>
         <a class="col active" href="#home">Inicio</a>
       </div>
     </div>
@@ -32,7 +34,7 @@
     
     <div class="row bgimg-1" id="home">
       <div class="contenedor-home">
-        <img class="hello col-sm-3" src="img/hello.png" alt="saludando en ingles">
+        <img class="hello col-sm-3 hide-left" src="img/hello.png" alt="saludando en ingles">
         
         <div class="col-md-offset-3 estas-en col-md-4 col-xs-12">
           <div>
@@ -42,15 +44,15 @@
         </div>
         
         <div class="recuadro logo col-md-5 col-xs-12">
-          En Wit English queremos que aprendas ingl&eacute;s de una manera din&aacute;mica, divertida y natural. Nuestro
-          <strong>enfoque comunicativo</strong> basado en <strong>CLIL</strong> permite que en nuestras aulas se
-          promueva la adquisici&oacute;n de conocimientos espec&iacute;ficos y del idioma ingl&eacute;s de forma simult&aacute;nea;
-          y, por lo tanto, se desarrollen procesos cognitivos, afectivos y psicomotrices necesarios para comunicar.
+          Queremos que aprendas ingl&eacute;s de una manera din&aacute;mica, divertida y natural. Nuestro
+          <b>enfoque comunicativo</b> basado en <b>CLIL</b> permite que en nuestras aulas se
+          promueva la adquisici&oacute;n de conocimientos espec&iacute;ficos y del idioma ingl&eacute;s de forma simult&aacute;nea.
         </div>
       </div>
     </div>
     
-    <div class="row">
+    <div class="row" id="clil">
+      <h3>¿Quer&eacute;s saber qu&eacute; es CLIL? Mir&aacute; este video</h3>
       <div class="col-12 iframe-container align-self-center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/eCpuownLOB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
@@ -58,43 +60,116 @@
     
     
     <div class="row" id="cursos">
-      <h2>Cursos</h2>
+      <h3>Programas</h3>
       <div class="recuadro cursos col-lg-12">
         En Wit English, preparamos a nuestros estudiantes para el mundo del siglo 21, donde las personas trabajan en equipo,
         usan una lengua extranjera para comunicarse con personas de distintos pa&iacute;ses, son capaces de resolver problemas y descubrir
-        el mundo por ellos mismos utilizando diversos recursos y herramientas adquiridos en clases. Preparamos a los j&oacute;venes del futuro
-        y brindamos los primeros pasos para un aprendizaje independiente.
+        el mundo por ellos mismos utilizando diversos recursos y herramientas adquiridos en clases.
       </div>
       
-      <div class="curso col-md-offset-1 col-md-3 col-sm-12">
+      <div class="curso col-md-6 col-sm-12">
         <div class="image col-xs-6">
-          <img src="img/wit-little-ones.png" alt="cursos infantiles">
+          <img src="img/little-ones.svg" alt="cursos infantiles">
         </div>
         <div class="col-xs-6 col-md-12">
           <button type="button" class="btn btn-info" id="little-btn" onclick="mostrarTextoCurso('little')">conocer +</button>
-          <span class="row texto-curso" id="little-texto">Programa especializado para niños de 4 a 7 años que permite potenciar sus posibilidades motoras, cognitivas y lingüísticas a través del juego.</span>
+          <span class="row texto-curso" id="little-texto">
+            Programa especializado para niños de 4 a 7 años que permite potenciar sus posibilidades motoras, cognitivas y
+            lingüísticas a través del juego. Estimulamos la conciencia fonol&oacute;gica desde temprana edad a través de PHONICS.
+          </span>
         </div>
       </div>
       
-      <div class="curso col-md-3 col-sm-12">
+      <div class="curso col-md-6 col-sm-12">
         <div class="image col-xs-6">
-          <img src="img/wit-kids.png" alt="cursos para jovenes">
+          <img src="img/kids.svg" alt="cursos para jovenes">
         </div>
         <div class="col-xs-6 col-md-12">
           <button type="button" class="btn btn-info" id="kids-btn" onclick="mostrarTextoCurso('kids')">conocer +</button>
-          <span class="row texto-curso" id="kids-texto">Programa especializado para niños de 7 a 13 que permite potenciar sus habilidades cognitivas y lingüísticas a través del juego y la exploración de nuevos conocimientos asociado a diferentes disciplinas.</span>
+          <span class="row texto-curso" id="kids-texto">
+            Programa especializado para niños de 7 a 13 que permite potenciar sus habilidades cognitivas y lingü&iacute;sticas
+            a través del juego y la exploración de nuevos conocimientos asociado a diferentes disciplinas. Estimulamos la
+            conciencia fonol&oacute;gica desde temprana edad a través de PHONICS.
+          </span>
         </div>
       </div>
       
-      <div class="curso col-md-3 col-sm-12">
+      <div class="curso col-md-6 col-sm-12">
         <div class="image col-xs-6">
-          <img src="img/wit-adults.png" alt="cursos para adultos">
+          <img src="img/youngsters.svg" alt="cursos para jovenes">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="youngsters-btn" onclick="mostrarTextoCurso('youngsters')">conocer +</button>
+          <span class="row texto-curso" id="youngsters-texto">
+            Programa para j&oacute;venes de 14 a 17 que permite potenciar sus habilidades cognitivas y lingüísticas a trav&eacute;s del
+            juego y la exploraci&oacute;n de nuevos conocimientos asociado a diferentes disciplinas.
+          </span>
+        </div>
+      </div>
+      
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/adults.svg" alt="cursos para adultos">
         </div>
         <div class="col-xs-6 col-md-12">
           <button type="button" class="btn btn-info" id="adults-btn" onclick="mostrarTextoCurso('adults')">conocer +</button>
-          <span class="row texto-curso" id="adults-texto">Programa especializado para adultos que permite potenciar sus habilidades cognitivas y lingüísticas a través del juego y la exploración de nuevos conocimientos asociado a diferentes disciplinas.</span>
+          <span class="row texto-curso" id="adults-texto">
+            Programa especializado para adultos que permite potenciar sus habilidades cognitivas y lingü&iacute;sticas a trav&eacute;s
+            del juego y la exploraci&oacute;n de nuevos conocimientos asociado a diferentes disciplinas.
+          </span>
         </div>
       </div>
+      
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/conversation.svg" alt="cursos de conversacion">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="conversation-btn" onclick="mostrarTextoCurso('conversation')">conocer +</button>
+          <span class="row texto-curso" id="conversation-texto">
+            Programa diseñado para adultos con nivel de inglés B2 en adelante que deseen pulir y explorar nuevas opciones
+            con el idioma mediante la interacci&oacute;n grupal, el juego y la improvisaci&oacute;n.
+          </span>
+        </div>
+      </div>
+  
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/survival-english.svg" alt="Taller para viajeros">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="survival-btn" onclick="mostrarTextoCurso('survival')">conocer +</button>
+          <span class="row texto-curso" id="survival-texto">
+            Taller para viajeros  que deseen comunicarse de manera concisa y r&aacute;pida en determinadas situaciones.
+          </span>
+        </div>
+      </div>
+      
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/in-company.svg" alt="cursos in company">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="in-company-btn" onclick="mostrarTextoCurso('in-company')">conocer +</button>
+          <span class="row texto-curso" id="in-company-texto">
+            Queremos ayudarte a potenciar tu empresa. Por ello, nos adaptamos a las necesidades de tu empresa y de tu personal.
+          </span>
+        </div>
+      </div>
+      
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/international-tests.svg" alt="preparacion para examenes">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="international-tests-btn" onclick="mostrarTextoCurso('international-tests')">conocer +</button>
+          <span class="row texto-curso" id="international-tests-texto">
+            Preparaci&oacute;n anual de ex&aacute;menes internacionales de la Universidad de Cambridge (FCE y  CAE), que permite al alumno pulir y alcanzar las habilidades y nociones indispensable para obtener dicha certificaci&oacute;n
+           </span>
+        </div>
+      </div>
+      
+      
       
     </div>
     
@@ -135,8 +210,12 @@
   
     <div class="row contact-telefono">
     
-      <h3 class="row">O llamanos al</h3>
-      <h2 class="row">4241067 - 2616611231</h2>
+      <h2 class="row">¿Alguna duda?</h2>
+      <h3 class="row">Llamanos a</h3>
+      <h4 class="row"><i class="fas fa-phone-volume"></i>4241067 - <i class="fab fa-whatsapp"></i> 2616611231</h4>
+    
+      <h3 class="row">Visitanos en</h3>
+      <h4 class="row"><i class="fas fa-map-marker-alt"></i>Ser&uacute; 82 - Ciudad - Mendoza</h4>
     </div>
     
   </div>
@@ -159,9 +238,16 @@
           <img src="img/facebook.svg" alt="">
         </a>
         <a href="https://www.instagram.com/wit_english82/" data-toggle="popover" data-placement="top" data-trigger="hover" offset="5" data-content="click para visitarnos en instagram" target="_blank">
-          <img src="img/instagram.svg" alt=""></a>
+          <img src="img/instagram.svg" alt="">
+        </a>
+        <div class="contact-design">
+          <a href="mailto:mdmarini@outlook.com?Subject=Me%20encanto%20tu%20diseño%20del%20Wit" target="_top">designed by Merengue Media</a>
+        </div>
       </div>
+     
     </div>
+    
+   
   </footer>
 
 </body>
@@ -175,7 +261,7 @@
   function scrollFunction() {
     var hello = document.getElementsByClassName("hello")[0];
     
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
       document.getElementById("guarda-superior").style.top = "-6vw";
       document.getElementById("guarda-inferior").style.bottom = "-6vw";
       document.getElementById("your-station").style.bottom = "-172px";

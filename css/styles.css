@@ -34,8 +34,9 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, p, button {
-  color: #777777;
+  color: #fff !important;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 button {
@@ -128,6 +129,7 @@ header {
   left: 0;
   transition: 0.5s;
   z-index: 0;
+  pointer-events: none
 }
 
 .contenedor-home {
@@ -163,7 +165,8 @@ header {
   width: 100%;
 }
 
-#cursos h2 {
+#cursos h3 {
+  margin-top: 5vw;
   text-align: center;
   color: #fff;
 }
@@ -180,7 +183,7 @@ header {
 }
 
 .recuadro.cursos{
-  margin-top: 5vw;
+  /*margin-top: 5vw;*/
 }
 
 .paragraph {
@@ -207,6 +210,7 @@ footer {
   left: 0;
   transition: 0.5s;
   z-index: 0;
+  pointer-events: none
 }
 
 #your-station {
@@ -239,6 +243,14 @@ footer {
   width: 55px;
 }
 
+.social-networks .contact-design a {
+  width: 255px;
+  position: fixed;
+  bottom: 5px;
+  left: 25px;
+  color: #ffffff;
+}
+
 .social-networks img {
   z-index: 100;
   float: left;
@@ -247,10 +259,10 @@ footer {
 }
 
 .curso{
-  min-height: 220px!important;
+  min-height: 250px!important;
   border-radius: 5px;
-  background-color: #f1f0f0;
-  margin: 1vw;
+  /*background-color: #f1f0f0;*/
+  /*margin: 1vw;*/
 }
 
 .curso .image{
@@ -265,17 +277,18 @@ footer {
 .curso .texto-curso {
   display: none;
   text-align: justify;
+  color: #FFFFFF;
 }
 
-.curso .texto-curso#little-texto{
-  color: #a5cd24;
+.curso .texto-curso span{
+  font-weight: 700;
 }
-.curso .texto-curso#kids-texto{
-  color: #eb6c00;
-}
-.curso .texto-curso#adults-texto{
-  color: #2278a3;
-}
+/*.curso .texto-curso#kids-texto{*/
+  /*color: #eb6c00;*/
+/*}*/
+/*.curso .texto-curso#adults-texto{*/
+  /*color: #2278a3;*/
+/*}*/
 
 
 .popover-title {
@@ -323,9 +336,13 @@ footer {
   margin: 5% 10% 10% 10%;
 }
 
-.contact-telefono h3, .contact-telefono h2 {
+.contact-telefono h3, .contact-telefono h2, .contact-telefono h1 {
   text-align: center;
   color: #fff;
+}
+
+.contact-telefono i{
+  border: none;
 }
 
 .contact-form .btnContact {
@@ -419,11 +436,15 @@ footer {
   
   .contact-form {
     margin-top: 30%;
-    margin-bottom: 50%;
+    margin-bottom: 10%;
   }
   
   .contact-form .contact-image {
     display: none;
+  }
+  
+  .contact-telefono {
+    margin: 5% 10% 40% 10%;
   }
 }
 
@@ -467,6 +488,15 @@ footer {
     transition: 0.5s;
   }
   
+  .social-networks .contact-design a {
+    width: 100%;
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    text-align: right;
+    color: #ffffff;
+  }
+  
   .hello {
     display: none;
   }
@@ -479,16 +509,20 @@ footer {
     font-weight: 900;
   }
   
-  .estas-en img {
-    height: 60%;
-    width: 60%;
-  }
+  /*.estas-en img {*/
+    /*height: 60%;*/
+    /*width: 60%;*/
+  /*}*/
   
   .recuadro {
-    font-size: 3vw;
+    font-size: 5vw;
     text-align: justify;
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+  
+  .recuadro.logo {
+    margin-bottom: 8%;
   }
   
   
