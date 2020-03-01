@@ -158,7 +158,7 @@ header.container{
 }
 
 .contenedor-home {
-  height: 48vw;
+  height: 90vh;
 }
 
 .hello {
@@ -169,6 +169,20 @@ header.container{
   transition: 1.5s;
   max-width: 100%;
   max-height: 100%;
+}
+
+img.logo{
+  transition: 1.5s;
+  position: absolute;
+  top: 3vh;
+  width: 19vw;
+  right: 5%;
+  padding: 0;
+}
+
+img.logo.scroll{
+  top: 0.5em;
+  width: 15em;
 }
 
 .hello.hide-left {
@@ -213,7 +227,8 @@ header.container{
 }
 
 .recuadro.logo{
-  margin-top: 14vw;
+  margin-top: 35vh;
+  height: 20vh;
 }
 
 .recuadro.cursos{
@@ -319,13 +334,15 @@ footer {
 .curso button{
   margin: 1vw auto;
   display: inherit;
-  background-color: #f5f5f5;
+  background-color: #718aca;;
+  border-color: #718aca;
+  color: #f5f5f5 !important;
 }
 
 .curso button.active:focus, curso button:hover{
   margin: 1vw auto;
   display: inherit;
-  background-color: #f8f8f8;
+  background-color: #596c9e;
 }
 
 .curso .texto-curso {
@@ -457,7 +474,11 @@ footer {
     height: 25%;
     width: 103%;
   }
-  
+
+  img.logo {
+    display: none;
+  }
+
   .hello {
     display: none;
   }
@@ -476,7 +497,10 @@ footer {
     overflow: paged-x;
     overflow: -webkit-paged-x;
   }
-  
+
+  .content__container__list {
+    padding-left: 6em;
+  }
   
   .recuadro {
     font-size: 2vw;
@@ -507,7 +531,11 @@ footer {
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 425px) {
   .contenedor-home {
-    height: 57vw;
+    height: 100vh;
+  }
+
+  img.logo {
+    display: none;
   }
   
   .topnav a {
@@ -530,6 +558,10 @@ footer {
   
   #guarda-inferior {
     width: auto;
+  }
+
+  .content__container__list {
+    padding-left: 6em;
   }
   
   .social-networks {
@@ -609,7 +641,7 @@ footer {
   overflow: hidden;
   height: 50px;
   padding: 0 40px;
-
+  width: max-content;
 }
 
 .content__container__text {

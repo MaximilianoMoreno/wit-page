@@ -8,7 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
         <link rel="icon" href="img/wit-logo-color.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta name="Description"
+              CONTENT="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
+        <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.1">
         <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -85,21 +87,25 @@
         </footer>
 
     </body>
-    <!---->
-    <!--<script>-->
-        <!--// When the user scrolls down 50px from the top of the document, resize the header's font size-->
-        <!--window.onscroll = function () {-->
-            <!--scrollFunction()-->
-        <!--};-->
-    <!---->
-        <!--function scrollFunction() {-->
-            <!--if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {-->
-                <!--document.getElementById("guarda-superior").style.top = "-6vw";-->
-                <!--document.getElementById("guarda-inferior").style.bottom = "-6vw";-->
-            <!--} else {-->
-                <!--document.getElementById("guarda-superior").style.top = "0 ";-->
-                <!--document.getElementById("guarda-inferior").style.bottom = "0";-->
-            <!--}-->
-        <!--}-->
-    <!--</script>-->
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            var logo = document.getElementsByClassName("logo")[0];
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("guarda-superior").style.top = "-4vw";
+                document.getElementById("guarda-inferior").style.bottom = "-6vw";
+                logo.classList.add("scroll");
+            } else {
+                document.getElementById("guarda-superior").style.top = "0 ";
+                document.getElementById("guarda-inferior").style.bottom = "0";
+                logo.classList.remove("scroll");
+            }
+        }
+    </script>
 </html>

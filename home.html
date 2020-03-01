@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description"
     CONTENT="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
-  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.1">
   <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -395,6 +395,7 @@
 
   function scrollFunction() {
     var hello = document.getElementsByClassName("hello")[0];
+    var logo = document.getElementsByClassName("logo")[0];
 
     if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
       document.getElementById("guarda-superior").style.top = "-4vw";
@@ -403,12 +404,14 @@
       document.getElementsByClassName("social-networks")[0].style.right = "2%";
       // document.getElementsByClassName("hello")[0].style.left = "-100vw !important";
       hello.classList.add("hide-left");
+      logo.classList.add("scroll");
     } else {
       document.getElementById("guarda-superior").style.top = "0 ";
       document.getElementById("guarda-inferior").style.bottom = "0";
       // document.getElementById("your-station").style.bottom = "0";
       document.getElementsByClassName("social-networks")[0].style.right = "15%";
       hello.classList.remove("hide-left");
+      logo.classList.remove("scroll");
     }
   }
 
