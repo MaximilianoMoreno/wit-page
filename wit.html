@@ -1,108 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Wit English Learning Station</title>
-    
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  <body>
-    <header>
-      <img id="guarda-superior" src="img/guardasuperior.png" alt="">
-      <div class="topnav">
-        <a href="#contacto">Contactanos</a>
-        <a href="#inscripcion">Pre-inscripci&oacute;n</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#biblioteca">Biblioteca</a>
-        <a href="#clil">CLIL</a>
-        <a class="active" href="#home">Inicio</a>
-      </div>
-    </header>
-    
-    <section>
-  
-      <div class="bgimg-1" id="home">
-        
-        <div class="hello" ></div>
-    
-        <div class="logo"></div>
-    
-        <div class="estas-en">
-          Est&aacute;s en
-        </div>
-    
-        <div class="recuadro">
-          En Wit English queremos que aprendas ingl&eacute;s de una manera din&aacute;mica, divertida y natural. Nuestro
-          <strong>enfoque comunicativo</strong> basado en <strong>CLIL</strong> permite que en nuestras aulas se
-          promueva la adquisici&oacute;n de conocimientos espec&iacute;ficos y del idioma ingl&eacute;s de forma simult&aacute;nea;
-          y, por lo tanto, se desarrollen procesos cognitivos, afectivos y psicomotrices necesarios para comunicar.
-        </div>
-    
-        <div>
-    
-    
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    <footer>
-      <img id="guarda-inferior" src="img/guardainferior.png" alt="">
-      
-      <div class="footer-info">
-        <div id="your-station">
-          <div>#WitYourStation</div>
-          <img src="img/wityourstation-img.svg" alt="">
-        </div>
-        
-        <div class="social-networks">
-          <img src="img/whatsapp.svg" alt="">
-          <img src="img/facebook.svg" alt="">
-          <img src="img/instagram.svg" alt="">
-        </div>
-      </div>
-    </footer>
-  
-    
-  
-  
-  
-  
-  
-  </body>
+<html lang="es">
 
-  <script>
-    // When the user scrolls down 50px from the top of the document, resize the header's font size
-    window.onscroll = function() {scrollFunction()};
-  
-    function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("guarda-superior").style.top = "-6vw";
-        document.getElementById("guarda-inferior").style.bottom = "-6vw";
-        document.getElementById("your-station").style.bottom = "-172px";
-        document.getElementsByClassName("social-networks")[0].style.right = "2%";
-        document.getElementsByClassName("hello")[0].style.left = "-100%";
-      } else {
-        document.getElementById("guarda-superior").style.top = "0 ";
-        document.getElementById("guarda-inferior").style.bottom = "0";
-        document.getElementById("your-station").style.bottom = "0";
-        document.getElementsByClassName("social-networks")[0].style.right = "15%";
-        document.getElementsByClassName("hello")[0].style.left = "10vw";
+<head>
+  <meta charset="UTF-8">
+  <title>Wit English Learning Station - Instituto de ingl&eacute;s en Mendoza</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link rel="icon" href="img/wit-logo-color.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description"
+    CONTENT="Enseñanza de lengua inglesa,  Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
+  <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <img class="row" id="guarda-superior" src="img/guardasuperior.png" alt="decoracion-top">
+    <div class="row">
+
+      <div class="col-sm-12  topnav">
+        <a class="col" href="Plataforma">Plataforma</a>
+        <a class="col" href="#contacto">Contacto</a>
+        <a class="col" href="#Extensiones">Extensiones</a>
+        <a class="col" href="#cursos">Cursos</a>
+        <a class="col" href="#Metodologia">Metodología</a>
+        <a class="col active" href="#home">Inicio</a>
+      </div>
+    </div>
+  </header>
+
+  <p class="container">
+
+    <div class="row bgimg-1" id="home">
+      <div class="contenedor-home">
+
+
+        <img class="hello col-sm-3 hide-left" src="img/hello.png" alt="saludando en ingles">
+
+        <div class="col-md-offset-3 estas-en col-md-4 col-xs-12">
+          <div>
+          </div>
+          <img class="logo col-md-3 col-sm-12" src="img/wit-logo-completo.png" alt="logo wit">
+        </div>
+
+        <div class="recuadro logo col-md-5 col-xs-12">
+          <p>
+            Aprendé inglés
+          </p>
+
+          <div>
+            Divertite
+          </div>
+
+          <div>
+            Disfrutalo
+          </div>
+
+          <div>
+            Hablalo
+          </div>
+
+          Las puertas del mundo se abren primero en #WitYourStation
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="Metodologia">
+      <h3>Metodología</h3>
+
+      <h3>Nuestro enfoque comunicativo<basado en <b>Metodología</b> permite que en nuestras aulas se
+          promueva la adquisici&oacute;n de conocimientos espec&iacute;ficos y del idioma ingl&eacute;s de forma
+          simult&aacute;nea.
+          Es todo lo que necesitas para convertirte en un CIUDADANO GLOBAL.
+          Garantizá tu éxito en el siglo 21
+          <div class="col-12 iframe-container align-self-center">
+            <iframe title="video explicativo de nuestra metodologia CLIL" width="560" height="315"
+              src="https://www.youtube.com/embed/eCpuownLOB8" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+    </div>
+
+
+    <p class="row" id="cursos">
+      <h3>Cursos</h3>
+      <div class="recuadro cursos col-lg-12">
+      </div>
+
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/little-ones.svg" alt="cursos infantiles">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="little-btn" onclick="mostrarTextoCurso('little')">conocer
+            +</button>
+          <span class="row texto-curso" id="little-texto">
+            Programa especializado para niños de 4 a 7 años que permite potenciar sus posibilidades motoras, cognitivas
+            y
+            lingüísticas a través del juego. Estimulamos la conciencia fonol&oacute;gica desde temprana edad a través de
+            PHONICS.
+            Cursado de 2 dos horas semanales en horarios de mañana o de tarde. Consultá por horarios y cupos en
+            secretaría.
+          </span>
+        </div>
+      </div>
+
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/kids.svg" alt="cursos para jovenes">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="kids-btn" onclick="mostrarTextoCurso('kids')">conocer
+            +</button>
+          <span class="row texto-curso" id="kids-texto">
+            Programa especializado para niños de 8 a 13 que permite potenciar sus habilidades cognitivas y
+            lingü&iacute;sticas
+            a través del juego y la exploración de nuevos conocimientos asociado a diferentes disciplinas. Estimulamos
+            la
+            conciencia fonol&oacute;gica desde temprana edad a través de PHONICS. Cursado de 3 horas semanales en
+            horarios de mañana y tarde. Cunsultá por horarios y cupos en secretaría.
+          </span>
+        </div>
+      </div>
+
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/youngsters.svg" alt="cursos para jovenes">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="youngsters-btn"
+            onclick="mostrarTextoCurso('youngsters')">conocer +</button>
+          <span class="row texto-curso" id="youngsters-texto">
+            Programa para j&oacute;venes de 14 a 17 que permite potenciar sus habilidades cognitivas y lingüísticas a
+            trav&eacute;s del
+            juego y la exploraci&oacute;n de nuevos conocimientos asociado a diferentes disciplinas. Cursado de 3 horas
+            semanales por la tarde. Consltá por horarios y cupos en secretaría.
+          </span>
+        </div>
+      </div>
+
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/adults.svg" alt="cursos para adultos">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="adults-btn" onclick="mostrarTextoCurso('adults')">conocer
+            +</button>
+          <span class="row texto-curso" id="adults-texto">
+            Programa especializado para adultos que permite potenciar sus habilidades cognitivas y lingü&iacute;sticas a
+            trav&eacute;s
+            del juego y la exploraci&oacute;n de nuevos conocimientos asociado a diferentes disciplinas. Cursos
+            regulares con una carga hoaria de 3 horas semanales de mañana o de tarde. Cursos acelerados con una carga
+            horaria de 4 horas semanales que comienzan en Julio. Consultá horarios y cupos en secretaría.
+          </span>
+        </div>
+      </div>
+
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/conversation.svg" alt="cursos de conversacion">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="conversation-btn"
+            onclick="mostrarTextoCurso('conversation')">conocer +</button>
+          <span class="row texto-curso" id="conversation-texto">
+            Programa vespertino diseñado para adultos con nivel de inglés B2 en adelante que deseen pulir y explorar
+            nuevas opciones
+            con el idioma mediante la interacci&oacute;n grupal, el juego y la improvisaci&oacute;n con una carga
+            horaria de 2 horas los días miércoles. La incoporación de los alumnos a este está sujeta a los resultados
+            del Placement.
+          </span>
+        </div>
+      </div>
+
+      <div class="curso col-md-6 col-sm-12">
+        <div class="image col-xs-6">
+          <img src="img/survival-english.svg" alt="Taller para viajeros">
+        </div>
+        <div class="col-xs-6 col-md-12">
+          <button type="button" class="btn btn-info" id="survival-btn" onclick="mostrarTextoCurso('survival')">conocer
+            +</button>
+          <span class="row texto-curso" id="survival-texto">
+            Taller para viajeros que deseen comunicarse de manera concisa y r&aacute;pida en determinadas situaciones
+            con una duración de 1 mes. Consultá fecha de incio en secretaría.
+          </span>
+        </div>
+      </div>
+
+      <p class="row" id="Extensiones">
+        <h3>Extensiones</h3>
+        <div class="recuadro cursos col-lg-12">
+        </div>
+        <p class="row bgimg-1" id="home">
+          <p class="contenedor-home">
+            <div class="curso col-md-6 col-sm-12">
+              <div class="image col-xs-6">
+                <img src="img/in-company.svg" alt="cursos in company">
+              </div>
+              <div class="col-xs-6 col-md-12">
+                <button type="button" class="btn btn-info" id="in-company-btn"
+                  onclick="mostrarTextoCurso('in-company')">conocer +</button>
+                <span class="row texto-curso" id="in-company-texto">
+                  Queremos ayudarte a potenciar tu empresa. Por ello, nos adaptamos a las necesidades de tu empresa y de
+                  tu personal.
+                </span>
+              </div>
+            </div>
+
+            <p class="curso col-md-6 col-sm-12">
+              <div class="image col-xs-6">
+                <img src="img/international-tests.svg" alt="preparacion para examenes">
+              </div>
+              <p class="col-xs-6 col-md-12">
+                <button type="button" class="btn btn-info" id="international-tests-btn"
+                  onclick="mostrarTextoCurso('international-tests')">conocer +</button>
+                <div class="row texto-curso col-md-12" id="international-tests-texto">
+                  <span class="row">
+                    <span>
+                      Preparaci&oacute;n anual de exámenes internacionales de la Universidad de Cambridge que permite al
+                      alumno pulir y alcanzar las habilidades y nociones
+                      indispensables para obtener dicha certificaci&oacute;n. Nuestros programas se encuentran
+                      exitosamente alineados a los ex&aacute;menes ofrecidos por Pearson Reino Unido.
+                      Mediante nuestra preparaci&oacute;n los alumnos podrán experimentar ex&aacute;menes
+                      internacionales comunicativos que eval&oacute;an el conocimiento del idioma en contextos
+                      aut&eacute;nticos y realistas.
+                    </span>
+                  </span>
+                </div>
+              </p>
+            </p>
+            <p>
+              Centro oficial de preparación.
+            </p>
+            <p>
+              Único centro examinador en Cuyo.
+            </p>
+            <p>
+              Exámenes de práctica mensuales.
+            </p>
+            <p>
+              Seguimiento personalizado de cada alumno
+            </p>
+
+          </p>
+        </p>
+      </p>
+    </p>
+  </p>
+  </p>
+  </p>Grupos reducidos que permiten la práctica oral de cada alumno.
+
+  <span class="col-xl-6">
+
+    </p>
+    Conversación Online
+    </p>
+    <p> Tu clase personalizada a tu medida.
+    </p>
+    <p>Mejorá tu fluidez
+    </p>
+    <p>Ampliá tu vocabulario
+    </p>
+    <p> Adaptalo a tus horarios
+    </p>
+    <p>No compartas
+    </p>
+  </span>
+  </span>
+
+  </div>
+  </div>
+  </div>
+
+  </div>
+
+  <div class="contact-form" id="contacto">
+    <div class="contact-image">
+      <img src="img/wit-logo.png" alt="wit_logo" />
+    </div>
+    <script type="text/javascript">var submitted = false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted)  {alert('Mensaje Enviado');window.location='http://witenglish.com.ar/';}"></iframe>
+
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLScSzjjwOOkTY8hp_64nzFKJrGxgKfvx-SjzkUrYl1foCGlyaA/formResponse"
+      method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <h3>Dejanos tu mensaje</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="entry.466487952" required class="form-control" placeholder="Tu nombre *"
+              value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="entry.138067849" required class="form-control" placeholder="Tu e-mail *"
+              value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="entry.2032325000" class="form-control" placeholder=" Tu tel&eacute;fono"
+              value="" />
+          </div>
+          <div class="form-group">
+            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea name="entry.1454254950" class="form-control"
+              placeholder="Dejanos tu mensaje y nos contactaremos con vos a la brevedad."
+              style="width: 100%; height: 150px;"></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+  <div class="mapouter">
+    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=Wit%20English%20Mendoza%20Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+        href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+    <style>
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 600px;
       }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 600px;
+      }
+    </style>
+  </div>
+
+  <div class="row contact-telefono">
+
+    <h2 class="row">Be Awesome</h2>
+    <h3 class="row">Be Different</h3>
+    <h3 class="row">Be Wit</h3>
+
+  </div>
+
+  <footer class="row">
+    <img id="guarda-inferior" src="img/guardainferior.png" alt="">
+
+    <div class="row footer-info">
+      <div class="col-sm-offset-3 col" id="your-station">
+        <div>#WitYourStation</div>
+        <img src="img/wityourstation-img.svg" alt="">
+      </div>
+
+      <div class="social-networks">
+        <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" offset="5"
+          data-content="Encontranos en 261 6 611231">
+          <img src="img/whatsapp.svg" alt="">
+
+        </a>
+        <a href="https://www.facebook.com/WitEnglish/" data-toggle="popover" data-placement="top" data-trigger="hover"
+          offset="5" data-content="Click para visitarnos en facebook" target="_blank">
+          <img src="img/facebook.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/wit_english82/" data-toggle="popover" data-placement="top"
+          data-trigger="hover" offset="5" data-content="click para visitarnos en instagram" target="_blank">
+          <img src="img/instagram.svg" alt="">
+        </a>
+        <div class="contact-design">
+          <a href="mailto:mdmarini@outlook.com?Subject=Me%20encanto%20tu%20diseño%20del%20Wit" target="_top">designed by
+            Merengue Media</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+</body>
+
+<script>
+  scrollFunction();
+
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    var hello = document.getElementsByClassName("hello")[0];
+
+    if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+      document.getElementById("guarda-superior").style.top = "-6vw";
+      document.getElementById("guarda-inferior").style.bottom = "-6vw";
+      document.getElementById("your-station").style.bottom = "-172px";
+      document.getElementsByClassName("social-networks")[0].style.right = "2%";
+      // document.getElementsByClassName("hello")[0].style.left = "-100vw !important";
+      hello.classList.add("hide-left");
+    } else {
+      document.getElementById("guarda-superior").style.top = "0 ";
+      document.getElementById("guarda-inferior").style.bottom = "0";
+      document.getElementById("your-station").style.bottom = "0";
+      document.getElementsByClassName("social-networks")[0].style.right = "15%";
+      hello.classList.remove("hide-left");
     }
-  </script>
-  
-  <script>
-    AOS.init();
-  </script>
+  }
+
+  function mostrarTextoCurso(idCurso) {
+    var button = document.getElementById(`${idCurso}-btn`);
+    var text = document.getElementById(`${idCurso}-texto`);
+
+    if (text.style.display === "flex") {
+      button.classList.remove("active");
+      button.innerHTML = "conocer +";
+      text.style.display = "none";
+    } else {
+      button.classList.add("active");
+      button.innerHTML = "mostrar -";
+      text.style.display = "flex";
+    }
+  }
+
+
+
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
 
 </html>
