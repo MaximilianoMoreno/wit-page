@@ -25,6 +25,10 @@ a {
 iframe {
   margin: auto;
   display: flex;
+  max-width: 900px;
+  max-height: 500px;
+  height: auto;
+  width: auto;
 }
 
 html, body {
@@ -155,6 +159,24 @@ nav ul li a.active {
   color: white;
 }
 
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 28%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (min-width: 767px) {
   nav ul {
     display: flex;
@@ -281,6 +303,23 @@ img.logo.scroll{
 .hashtag {
   font-size: 3em;
   font-family: "BehindBlueEyes", sans-serif;
+  background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
 }
 
 #cursos h3 {
@@ -424,13 +463,6 @@ footer {
 .curso .texto-curso span{
   font-weight: 700;
 }
-/*.curso .texto-curso#kids-texto{*/
-  /*color: #eb6c00;*/
-/*}*/
-/*.curso .texto-curso#adults-texto{*/
-  /*color: #2278a3;*/
-/*}*/
-
 
 .popover-title {
   color: #2278a3;
@@ -560,7 +592,17 @@ footer {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 900;
   }
-  
+
+  .hashtag {
+    font-size: 2em;
+  }
+
+  .content__container {
+    overflow: hidden;
+    height: 50px;
+    width: max-content;
+  }
+
   .bgimg-1 {
     margin-top: 10vw;
     background-attachment: scroll;
@@ -599,7 +641,7 @@ footer {
 
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 425px) {
+@media screen and (max-device-width: 425px) {
   .contenedor-home {
     height: 100vh;
   }
@@ -607,14 +649,6 @@ footer {
   img.logo {
     display: none;
   }
-  
-  /* .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 4vw;
-  } */
   
   .bgimg-1 {
     margin-top: 20vw;
@@ -631,6 +665,25 @@ footer {
 
   .content__container__list {
     padding-left: 6em;
+  }
+
+  .hashtag {
+    font-size: 2em;
+  }
+
+  .content__container {
+    overflow: hidden;
+    height: 50px;
+    width: max-content;
+  }
+
+  .content__container__text {
+    padding-left: 0.8em;
+    top: -50px;
+    position: absolute;
+  }
+  .content__container__list {
+    padding-left: 1em !important;
   }
   
   .social-networks {
@@ -691,6 +744,19 @@ footer {
   }
 }
 
+/* Turn off parallax scrolling for tablets and phones */
+@media screen and (max-device-width: 410px) {
+  .content__container {
+    overflow: hidden;
+    height: 50px;
+    padding: 0 !important;
+    width: max-content;
+}
+  .content__container__list {
+    padding-left: 0 !important;
+  }
+
+}
 
 .content {
   /* position: absolute;
