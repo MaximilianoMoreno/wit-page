@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description"
     CONTENT="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
-  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.3">
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.4">
   <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -39,9 +39,9 @@
       <nav class="topnav" id="myTopnav">
         <ul>
           <li><a class="active" href="#home">Inicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#Metodologia">Metodología</a></li>
           <li><a href="#cursos">Cursos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
           <li><a href="students" target="_blank">Plataforma</a></li>
           <li><a href="inscripcion.html" target="_blank">Inscripciones</a></li>
           <li>
@@ -64,30 +64,7 @@
       <div class="contenedor-home">
         <img class="hello col-sm-3 hide-left" src="img/hello.png" alt="saludando en ingles">
 
-        <!-- <div class="col-md-offset-3 estas-en col-md-4 col-xs-12">
-          <div>
-            Est&aacute;s en
-          </div> 
-          <img class="logo col-md-3 col-sm-12" src="img/wit-logo-completo.png" alt="logo wit">
-        </div> -->
-
         <div class="recuadro col-md-offset-3 logo col-md-9 col-xs-12">
-          <!-- <p>
-            Aprend&eacute; ingl&eacute;s
-          </p>
-
-          <p>
-            Divertite
-          </p>
-
-          <p>
-            Disfrutalo
-          </p>
-
-          <p>
-            Hablalo
-          </p> -->
-
           <div class="content">
             <div class="content__container">
               <p class="content__container__text">
@@ -113,6 +90,47 @@
     </div>
   </div>
 
+  <div class="contact-form" id="contacto">
+    <div class="contact-image">
+      <img src="img/wit-logo.png" alt="wit_logo" />
+    </div>
+    <script type="text/javascript">var submitted = false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted)  {alert('Mensaje Enviado');window.location='http://witenglish.com.ar/';}"></iframe>
+
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLScSzjjwOOkTY8hp_64nzFKJrGxgKfvx-SjzkUrYl1foCGlyaA/formResponse"
+      method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <h3>Dejanos tu mensaje</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="entry.466487952" required class="form-control" placeholder="Tu nombre *"
+              value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="entry.138067849" required class="form-control" placeholder="Tu e-mail *"
+              value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="entry.2032325000" class="form-control" placeholder=" Tu tel&eacute;fono"
+              value="" />
+          </div>
+          <div class="form-group">
+            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea name="entry.1454254950" class="form-control"
+              placeholder="Dejanos tu mensaje y nos contactaremos con vos a la brevedad."
+              style="width: 100%; height: 150px;"></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
   <div class="container container-metodologia"  id="Metodologia">
     <div>
       
@@ -124,22 +142,10 @@
 
       <div class="col-md-6 col-align--center">
         <div class="metodologia">
-          <!-- <b>CLIL</b> -->
-  
-          <!-- El Aprendizaje Integrado de Contenidos y Lenguas Extranjeras es un enfoque que involucra el aprendizaje de una
-          temática a través de una
-          lengua extranjera. CLIL permite que los estudiantes experimenten el idioma en un contexto natural. Por lo tanto,
-          el proceso de aprendizaje
-          resulta más sencillo, altamente significativo y exitoso. -->
-  
-  
-          <!-- Comenzá tu viaje hacia el siglo 21. This is your station! -->
-  
-          Wit English privilegia la comunicación y la fluidez del idioma dentro de cada clase. 
-          Nuestra metodología logra que los estudiantes conozcan y experimenten el idioma en un 
-          contexto natural a través de temáticas orientadas según las edades. 
-          Cada clase permite que cada alumno despliegue sus habilidades no sólo académicas, sino de trabajo en equipo, 
-          resolución de problemas e inteligencia emocional. Todo aquello que un CIUDADANO GLOBAL necesita.
+          <p> En <strong>Wit English</strong> privilegiamos la comunicación y la fluidez del idioma dentro de cada clase con un método innovador. 
+          </p>
+          <br>  
+          <p>Vení a divertirte y convertite en un CIUDADANO GLOBAL.</p> 
           </div>
         
       </div>
@@ -308,47 +314,21 @@
       </div>
 
     </div>
-
-    <div class="contact-form" id="contacto">
-      <div class="contact-image">
-        <img src="img/wit-logo.png" alt="wit_logo" />
-      </div>
-      <script type="text/javascript">var submitted = false;</script>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-        onload="if(submitted)  {alert('Mensaje Enviado');window.location='http://witenglish.com.ar/';}"></iframe>
-
-      <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLScSzjjwOOkTY8hp_64nzFKJrGxgKfvx-SjzkUrYl1foCGlyaA/formResponse"
-        method="post" target="hidden_iframe" onsubmit="submitted=true;">
-        <h3>Dejanos tu mensaje</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" name="entry.466487952" required class="form-control" placeholder="Tu nombre *"
-                value="" />
-            </div>
-            <div class="form-group">
-              <input type="text" name="entry.138067849" required class="form-control" placeholder="Tu e-mail *"
-                value="" />
-            </div>
-            <div class="form-group">
-              <input type="text" name="entry.2032325000" class="form-control" placeholder=" Tu tel&eacute;fono"
-                value="" />
-            </div>
-            <div class="form-group">
-              <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <textarea name="entry.1454254950" class="form-control"
-                placeholder="Dejanos tu mensaje y nos contactaremos con vos a la brevedad."
-                style="width: 100%; height: 150px;"></textarea>
-            </div>
-          </div>
-        </div>
-      </form>
+    
+    <div class="row contact-telefono">
+    
+      <h2 class="row">¿Alguna duda?</h2>
+      <h3 class="row">Llamanos a</h3>
+      <h4 class="row"><i class="fas fa-phone-volume"></i>4241067 - <i class="fab fa-whatsapp"></i> 2616611231</h4>
+    
+      <h3 class="row">Visitanos en</h3>
+      <h4 class="row"><i class="fas fa-map-marker-alt"></i>Ser&uacute; 82 - Ciudad - Mendoza</h4>
     </div>
+
+   <div class="content" >
+    <button type="button" class="btn btn-info contacto" onclick="location.href='#contacto'">
+      ¡Contactanos!</button>
+   </div>
 
    <div class="row">
      <div class="mapouter">
@@ -358,7 +338,6 @@
          <style>
           .mapouter {
             position: relative;
-            /* text-align: right; */
             height: 500px;
             margin: 0 auto 150px;
           }
@@ -378,7 +357,7 @@
 
       <div class="social-networks">
         <a href="https://wa.me/542616611231" data-toggle="popover" data-placement="top" data-trigger="hover" offset="5"
-          data-content="Encontranos en 261 6 611231">
+          data-content="Encontranos en 261 6 611231" target="_blank">
           <img src="img/whatsapp.svg" alt="">
 
         </a>
