@@ -19,21 +19,20 @@
     <body>
         <header class="container">
             <img class="row" id="guarda-superior" src="img/guardasuperior.png" alt="decoracion-top">
-            <div class="row justify-content-center text-center">
-
-                <div class="col-sm-12  topnav ">
-                    <a class="col col-auto active" href="/">Inicio</a>
-                    <a class="col col-auto" href="#Metodologia">Metodología</a>
-                    <a class="col col-auto" href="#cursos">Cursos</a>
-                    <!--<a class="col col-auto" href="#Extensiones">Extensiones</a>-->
-                    <a class="col col-auto" href="#contacto">Contacto</a>
-                    <a class="col col-auto" href="students" target="_blank">Plataforma</a>
-                    <a class="col col-auto"
-                       href="https://docs.google.com/forms/d/e/1FAIpQLSexBeZN3A3Zf-3pZfY9mg32zDkMSNlwQw9eFdoQ2YQ3NKzxpA/viewform">Inscripciones</a>
-                </div>
-            </div>
-            <img class="logo col-md-3 col-md-offset-9" src="img/wit-logo-completo.png" alt="logo wit">
-        </header>
+              <nav class="topnav" id="myTopnav">
+                <ul>
+                  <li><a href="home.html">Inicio</a></li>
+                  <li><a href="students" target="_blank">Plataforma</a></li>
+                  <li><a class="active" href="#">Inscripciones</a></li>
+                  <li>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                </ul>
+              </nav>
+              <img class="logo col-md-2 col-md-offset-10" src="img/wit-logo-completo.png" alt="logo wit">       
+          </header>
 
         <script type="text/javascript">var submitted = false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"

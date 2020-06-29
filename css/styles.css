@@ -160,15 +160,20 @@ nav ul li a.active {
   color: white;
 }
 
-.video-container {
+.video-container, .map-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 28%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 28%;
+}
+
+.map-container{
+  height: 500px;
+  margin-bottom: 150px;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
-.video-frame {
+.video-frame, .map-frame  {
   position: absolute;
   top: 0;
   left: 0;
@@ -304,11 +309,11 @@ img.logo.scroll{
 .hashtag {
   font-size: 3em;
   font-family: "BehindBlueEyes", sans-serif;
-  background: linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c);
-  background-image: -moz-linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c);
-  background-image: -ms-linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c);
-  background-image: -o-linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c);
-  background-image: linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c);
+  background: linear-gradient(to right,#2278a3, #2b6da8, #4660a7, #634e9e, #7d388c, #634e9e, #4660a7, #2b6da8);
+  background-image: -moz-linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c, #634e9e, #4660a7, #2b6da8);
+  background-image: -ms-linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c, #634e9e, #4660a7, #2b6da8);
+  background-image: -o-linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c, #634e9e, #4660a7, #2b6da8);
+  background-image: linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c, #634e9e, #4660a7, #2b6da8);
   background-size: auto auto;
   -webkit-background-size: auto auto;
   -moz-background-size: auto auto;
@@ -331,10 +336,62 @@ img.logo.scroll{
 	}
 }
 
+.hr {
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: relative;
+  margin-bottom: 0em;
+  padding: 2em 0;
+}
+.hr:after, .hr:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 50%;
+  left: 0;
+}
+.hr:before {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(50%, transparent), to(transparent));
+  background: linear-gradient(90deg, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
+  background-size: 15px;
+  background-position: center;
+  z-index: 1;
+}
+.hr:after {
+  -webkit-transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
+  background: -webkit-gradient(linear, left top, right top, from(#2278a3), color-stop(#2b6da8), color-stop(#4660a7), color-stop(#634e9e), color-stop(#7d388c), color-stop(#634e9e), color-stop(#4660a7), to(#2b6da8));
+  background: linear-gradient(to right, #2278a3, #2b6da8, #4660a7, #634e9e, #7d388c, #634e9e, #4660a7, #2b6da8);
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-animation: bar 15s linear infinite;
+          animation: bar 15s linear infinite;
+}
+@-webkit-keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+@keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
 #cursos h3 {
-  margin-top: 5vw;
   text-align: center;
   color: #fff;
+  font-size: 3em;
 } 
 
 .recuadro {
@@ -595,6 +652,11 @@ footer {
     width: 103%;
   }
 
+  .recuadro.logo {
+    margin-bottom: 8%;
+    margin-top: 15vh;
+  }
+
   img.logo {
     display: none;
   }
@@ -754,6 +816,7 @@ footer {
   
   .recuadro.logo {
     margin-bottom: 8%;
+    margin-top: 20vh;
   }
   
   
