@@ -91,16 +91,17 @@
   </div>
 
   <div class="contact-form" id="contacto">
-    <div class="contact-image">
+    <!-- <div class="contact-image">
       <img src="img/wit-logo.png" alt="wit_logo" />
-    </div>
+    </div> -->
     <script type="text/javascript">var submitted = false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
       onload="if(submitted)  {alert('Mensaje Enviado');window.location='http://witenglish.com.ar/';}"></iframe>
 
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLScSzjjwOOkTY8hp_64nzFKJrGxgKfvx-SjzkUrYl1foCGlyaA/formResponse"
-      method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      method="post" target="hidden_iframe" onsubmit="return checkform(this);">
+      <!-- onsubmit="submitted=true;"> -->
       <h3>Dejanos tu mensaje</h3>
       <div class="row">
         <div class="col-md-6">
@@ -116,15 +117,53 @@
             <input type="text" name="entry.2032325000" class="form-control" placeholder=" Tu tel&eacute;fono"
               value="" />
           </div>
-          <div class="form-group">
-            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+          <div class="form-group lrg-btn">
+            <input type="button" name="btnConfirm" class="btnContact" value="Enviar"  data-toggle="modal" data-target="#exampleModal"/>
           </div>
+
         </div>
         <div class="col-md-6">
           <div class="form-group">
-            <textarea name="entry.1454254950" class="form-control"
+            <textarea name="entry.1454254950" class="form-control" required
               placeholder="Dejanos tu mensaje y nos contactaremos con vos a la brevedad."
               style="width: 100%; height: 150px;"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group md-btn">
+          <input type="buttOn" name="btnConfirm" class="btnContact" value="Enviar"  data-toggle="modal" data-target="#exampleModal"  />
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Por favor, complete el código</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <!-- START CAPTCHA -->
+              <div class="capbox">
+                <div id="claveDiv"></div>
+                  <div class="capbox-inner">
+                  Ingrese el número:<br>
+                  <input type="hidden" id="claveForm">
+                  <input type="text" name="claveInput" id="claveInput" size="15"><br>
+                </div>
+              </div>
+              <!-- END CAPTCHA -->
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button> -->
+              <!-- <button type="button" class="btn btn-primary">Aceptar</button> -->
+
+              <input type="submit" name="btnSubmit" class="btnContact" value="Enviar"/>
+            </div>
           </div>
         </div>
       </div>
@@ -344,10 +383,6 @@
     <img id="guarda-inferior" src="img/guardainferior.png" alt="">
 
     <div class="row footer-info">
-      <!-- <div class="col-sm-offset-3 col" id="your-station">
-        <div>#WitYourStation</div>
-        <img src="img/wityourstation-img.svg" alt="">
-      </div> -->
 
       <div class="social-networks">
         <a href="https://wa.me/542616611231" data-toggle="popover" data-placement="top" data-trigger="hover" offset="5"
@@ -391,15 +426,12 @@
     if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
       document.getElementById("guarda-superior").style.top = "-4vw";
       document.getElementById("guarda-inferior").style.bottom = "-6vw";
-      // document.getElementById("your-station").style.bottom = "-172px";
       document.getElementsByClassName("social-networks")[0].style.right = "2%";
-      // document.getElementsByClassName("hello")[0].style.left = "-100vw !important";
       hello.classList.add("hide-left");
       logo.classList.add("scroll");
     } else {
       document.getElementById("guarda-superior").style.top = "0 ";
       document.getElementById("guarda-inferior").style.bottom = "0";
-      // document.getElementById("your-station").style.bottom = "0";
       document.getElementsByClassName("social-networks")[0].style.right = "15%";
       hello.classList.remove("hide-left");
       logo.classList.remove("scroll");
@@ -439,4 +471,55 @@
   });
 </script>
 
+
+<script type="text/javascript">
+
+  // Captcha Script
+  
+  function checkform(theform){
+    var why = "";
+    
+    if(theform.claveInput.value == ""){
+      why += "- Por favor, ingrese el código CAPTCHA.\n";
+    }
+    if(theform.claveInput.value != ""){
+      if(ValidCaptcha(theform.claveInput.value) == false){
+        why += "- El código CAPTCHA no coincide.\n";
+      }
+    }
+    if(why !== ""){
+      alert(why);
+      return false;
+    }
+
+    return submitted=true;
+  }
+  
+  var a = Math.ceil(Math.random() * 9)+ '';
+  var b = Math.ceil(Math.random() * 9)+ '';
+  var c = Math.ceil(Math.random() * 9)+ '';
+  var d = Math.ceil(Math.random() * 9)+ '';
+  var e = Math.ceil(Math.random() * 9)+ '';
+  
+  var code = a + b + c + d + e;
+  document.getElementById("claveForm").value = code;
+  document.getElementById("claveDiv").innerHTML = code;
+  
+  // Validate input against the generated number
+  function ValidCaptcha(){
+    var str1 = removeSpaces(document.getElementById('claveForm').value);
+    var str2 = removeSpaces(document.getElementById('claveInput').value);
+    if (str1 == str2){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  
+  // Remove the spaces from the entered and generated code
+  function removeSpaces(string){
+    return string.split(' ').join('');
+  }
+</script>
+  
 </html>
