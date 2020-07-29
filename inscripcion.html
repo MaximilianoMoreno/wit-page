@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description"
               CONTENT="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
-        <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.1">
+        <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.7">
         <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -38,35 +38,37 @@
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                 onload="if(submitted)  {alert('Mensaje Enviado');window.location='http://witenglish.com.ar/';}"></iframe>
         
-        <section class="container" style="margin-top: 160px" id="iframe-form">
+        <section class="container iframe-container" style="margin-top: 160px" id="iframe-form">
             <iframe class="col-sm-12"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSexBeZN3A3Zf-3pZfY9mg32zDkMSNlwQw9eFdoQ2YQ3NKzxpA/viewform?embedded=true"
-                    allowtransparency="true" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';"
-                    scrolling="no" style="width:100%; min-height:2150px; border:none; overflow-y:hidden; overflow-x:hidden;" >Cargando...
+                    allowtransparency="true" onload="this.style.height=(this.contentDocument.body.scrollHeight+1450) +'px';"
+                    scrolling="yes" style="width:100%; min-height:2150px; border:none; overflow-y:hidden; overflow-x:hidden;" >Cargando...
             </iframe>
 
         </section>
-
-        <a mp-mode="dftl"
-           href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=177084000-f29d6ace-8d8b-4365-a788-b37f171538ef"
-           name="MP-payButton" class='blue-ar-l-rn-none'>Pagar</a>
-        <script type="text/javascript">
-            (function () {
-                function $MPC_load() {
-                    window.$MPC_loaded !== true && (function () {
-                        var s = document.createElement("script");
-                        s.type = "text/javascript";
-                        s.async = true;
-                        s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-                        var x = document.getElementsByTagName('script')[0];
-                        x.parentNode.insertBefore(s, x);
-                        window.$MPC_loaded = true;
-                    })();
-                }
-
-                window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-            })();
-        </script>
+        <section class="container btn-pagar">
+            <button class="btn btn-primary" mp-mode="dftl"
+            href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=177084000-f29d6ace-8d8b-4365-a788-b37f171538ef"
+            name="MP-payButton" class='blue-ar-l-rn-none'>Pagar</button>
+         <script type="text/javascript">
+             (function () {
+                 function $MPC_load() {
+                     window.$MPC_loaded !== true && (function () {
+                         var s = document.createElement("script");
+                         s.type = "text/javascript";
+                         s.async = true;
+                         s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                         var x = document.getElementsByTagName('script')[0];
+                         x.parentNode.insertBefore(s, x);
+                         window.$MPC_loaded = true;
+                     })();
+                 }
+ 
+                 window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+             })();
+         </script>
+        </section>
+        
 
         <footer class="container">
             <img id="guarda-inferior" src="img/guardainferior.png" alt="">
