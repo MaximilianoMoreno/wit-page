@@ -186,6 +186,7 @@ section.btn-pagar{
   top: 20%;
   width: auto;
 }
+
 section.btn-pagar > button {
   background-color: rgb(93, 61, 168);
   border-color: rgb(93, 61, 168);
@@ -204,6 +205,10 @@ section.btn-pagar > button {
   height: 100%;
 }
 
+.map-frame {
+  width: 75%;
+}
+
 @media screen and (min-width: 767px) {
   nav.topnav ul {
     display: flex;
@@ -214,7 +219,7 @@ section.btn-pagar > button {
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-device-width: 768px) {
   nav.topnav ul li:not(:last-child) {
-    display: none !important;
+    display: none;
   }
   nav.topnav ul li a.icon {
     display: block;
@@ -1041,7 +1046,7 @@ curso button:hover {
   height: 160px;
   overflow: hidden;
 
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 35px;
   line-height: 45px;
   /* color: #ecf0f1; */
