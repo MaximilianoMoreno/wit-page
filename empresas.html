@@ -10,13 +10,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description"
               CONTENT="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
-        <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.7">
+        <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.8">
         <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body id="empresas">
+        <!-- <div id="empresas-bg">
+            <img src="img/in-company.jpg" alt="">
+        </div> -->
+
         <header class="container">
             <img class="row" id="guarda-superior" src="img/guardasuperior.png" alt="decoracion-top">
               <nav class="topnav" id="myTopnav">
@@ -32,20 +36,22 @@
                 </li>
                 </ul>
               </nav>
-              <img class="logo col-md-2 col-md-offset-10" src="img/wit-logo-completo.png" alt="logo wit">       
+              <img class="logo" src="img/wit-logo-completo.png" alt="logo wit">       
           </header>
 
         <div class="container" style="margin: 30vh auto">
             <div class="row">
                 <h1 class="text-center">Servicios In-Company</h1>
-                <img src="img/in-company.jpg" alt="" class="img-responsive mx-auto d-block">
-                <p>
-                    Queremos ayudarte a potenciar tu negocio. Por ello, nos adaptamos a las necesidades de tu empresa y de tu personal.
-                </p>
+                <img id="bg" src="img/in-company.jpg" alt="" class="img-responsive mx-auto d-block">
+                <h2 id="bg-txt">
+                    <strong>
+                        Queremos ayudarte a potenciar tu negocio. Por ello, nos adaptamos a las necesidades de tu empresa y de tu personal.
+                    </strong>
+                </h2>
                 <br>
             </div>
 
-            <div class="row equal in-company ">
+            <div class="row equal in-company">
                
                 <span class="col-md-6 Link" href="#">
                     <h2>Clases online</h2>
@@ -138,9 +144,9 @@
             <img id="guarda-inferior" src="img/guardainferior.png" alt="">
 
             <div class="row footer-info">
-                <div class="col-sm-offset-3 col" id="your-station">
+                <div id="your-station">
                     <div>#WitYourStation</div>
-                    <img src="img/wityourstation-img.svg" alt="">
+                    <!-- <img src="img/wityourstation-img.svg" alt=""> -->
                 </div>
 
                 <div class="social-networks">
@@ -165,10 +171,12 @@
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("guarda-superior").style.top = "-4vw";
                 document.getElementById("guarda-inferior").style.bottom = "-6vw";
+                document.querySelector("#your-station div").style.fontSize = "2vw";
                 logo.classList.add("scroll");
             } else {
                 document.getElementById("guarda-superior").style.top = "0 ";
                 document.getElementById("guarda-inferior").style.bottom = "0";
+                document.querySelector("#your-station div").style.fontSize = "3vw";
                 logo.classList.remove("scroll");
             }
         }

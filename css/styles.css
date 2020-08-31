@@ -63,6 +63,48 @@ body#main h1 {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+/* #empresas-bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: 0;
+}
+#empresas-bg img {
+  z-index: -1;
+  opacity: 0.25;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+} */
+
+#bg {
+  position: relative; 
+  top: 0; 
+  left: 0; 
+  opacity: 0.75;
+	
+  /* Preserve aspet ratio */
+  min-width: 70%;
+  min-height: 70%;
+}
+
+#bg-txt {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  padding: 1em 1.5em;
+  opacity: 0.75;
+}
+
 button {
   cursor: pointer;
 }
@@ -433,8 +475,8 @@ header.container {
 img.logo {
   transition: 1.5s;
   position: absolute;
-  top: 3vh;
-  width: 19em;
+  top: 50px;
+  width: 15em;
   right: 5%;
   padding: 0;
 }
@@ -701,18 +743,17 @@ footer {
 #your-station {
   z-index: 100;
   bottom: 0;
-  left: 15%;
-  position: fixed;
   transition: 0.5s;
-  height: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
 
 #your-station div {
+  transition: 0.5s;
   z-index: 100;
-  float: left;
   font-size: 3vw;
-  margin-top: 85px;
-  position: relative;
 }
 
 .social-networks {
