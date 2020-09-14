@@ -207,6 +207,10 @@
         el mundo por ellos mismos utilizando diversos recursos y herramientas adquiridos en clases. -->
       </div>
 
+      <button type="button" id="boton-inscribite-cursos" class="btn btn-info contacto " onclick="location.href='inscripcion.html'">
+        ¡Sumate!</button>
+       
+       
       <div class="curso col-md-6 col-sm-12">
         <div class="image col-xs-6">
           <img src="img/little-ones.svg" alt="cursos infantiles">
@@ -328,24 +332,26 @@
         <div class="image col-xs-6">
           <img src="img/international-tests.svg" alt="preparacion para examenes">
         </div>
-        <div class="col-xs-6 col-md-12">
+        <div class="col-sm-6 col-md-12">
           <button type="button" class="btn btn-info" id="international-tests-btn"
             onclick="mostrarTextoCurso('international-tests')">conocer +</button>
           <div class="row texto-curso col-md-12" id="international-tests-texto">
             <span class="row">
               <span>
-                Preparaci&oacute;n anual de exámenes internacionales de la Universidad de Cambridge que permite al
-                alumno pulir y alcanzar las habilidades y nociones
+                Somos el primer centro examinador de <strong>Path</strong> de Cuyo. 
+                Preparaci&oacute;n anual de exámenes internacionales 
+                que permite al alumno pulir y alcanzar las habilidades y nociones
                 indispensables para obtener dicha certificaci&oacute;n. 
-                Mediante nuestra preparaci&oacute;n los alumnos podrán experimentar ex&aacute;menes internacionales
-                comunicativos que eval&oacute;an el conocimiento del idioma en contextos
+                Mediante nuestra preparaci&oacute;n los alumnos podrán experimentar ex&aacute;menes
+                internacionales
+                comunicativos que eval&uacute;an el conocimiento del idioma en contextos
                 aut&eacute;nticos y realistas.
               </span>
 
-              <span class="col-xl-6 col-md-6 ">
-                <img style="width:48%" src="img/prep-centre-logo_RGB.png" alt="Cambridge University examination logo"
-                  onclick="window.open('https://www.cambridgeenglish.org/latinamerica/exams-and-tests/')">
-            </span>
+              <span class="col-sm-12 ">
+                <img style="width:100%; height: auto" src="img/path.png" alt="Path Examination logo"
+                  onclick="window.open('www.pathlatam.com')">
+              </span>
 
           </div>
         </div>
@@ -467,6 +473,18 @@
 <script>
   $(document).ready(function () {
     $('[data-toggle="popover"]').popover();
+    
+    $(document).scroll(function() {
+      var boton = $('#boton-inscribite-cursos');
+      var miny = boton.parent().offset().top;
+      var maxy = miny + boton.parent().height();
+      var pos = $(this).scrollTop() + window.innerHeight / 2;
+      if ( pos > miny && pos < maxy) {
+        boton.fadeIn();
+      } else {
+        boton.fadeOut();
+      }
+    });
   });
 </script>
 

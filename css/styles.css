@@ -784,6 +784,28 @@ footer {
   transition: 0.5s;
 }
 
+button#boton-inscribite-cursos {
+  display: none;
+  position: fixed;
+  right: 5vw;
+  bottom: 15vh;
+  z-index: 100;
+  font-size: 1.5em;
+  -moz-animation: jump  1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
+  -webkit-animation: jump 1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
+  -o-animation: jump 1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
+  animation: jump 1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
+}
+
+@keyframes jump {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3em);
+  }
+}
+
 .curso {
   min-height: 250px !important;
   border-radius: 5px;
@@ -815,10 +837,10 @@ curso button:hover {
   text-align: justify;
   color: #2278a3;
 }
-
+/* 
 .curso .texto-curso span {
   font-weight: 700;
-}
+} */
 
 .popover-title {
   color: #2278a3;
