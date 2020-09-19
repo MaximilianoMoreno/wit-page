@@ -63,26 +63,16 @@ body#main h1 {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* #empresas-bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-  z-index: 0;
+div.seccion{
+  margin: 30vh auto
 }
-#empresas-bg img {
-  z-index: -1;
-  opacity: 0.25;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-} */
+
+div.seccion h1{
+  color: #2278a3;
+  font-size: 5em;
+  margin: 0 auto 1em;
+}
+
 
 #bg {
   position: relative; 
@@ -256,6 +246,7 @@ section.btn-pagar > button {
   display: -webkit-flex;
   flex-wrap: wrap;
 } */
+img.center-img{ margin: 0 auto; }
 
 .row.equal {
   display: flex;
@@ -271,7 +262,7 @@ section.btn-pagar > button {
 }
 
 .Link {
-  width: 47% !important;
+  width: 30% !important;
   margin: 1.5%;
   color: white;
   -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.16));

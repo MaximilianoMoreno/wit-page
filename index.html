@@ -15,6 +15,7 @@
 
     gtag('config', 'UA-167951482-2');
   </script>
+  <script src="./index.js"></script>
 
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -43,6 +44,7 @@
           <li><a href="#cursos">Cursos</a></li>
           <li><a href="students" target="_blank">Plataforma</a></li>
           <li><a href="empresas.html">Empresas</a></li>
+          <li><a href="examenes.html">Exámenes</a></li>
           <li><a href="inscripcion.html" target="_blank">Inscripciones</a></li>
           <li>
             <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
@@ -323,7 +325,9 @@
             onclick="mostrarTextoCurso('in-company')">conocer +</button>
           <span class="row texto-curso" id="in-company-texto">
             Queremos ayudarte a potenciar tu empresa. Por ello, nos adaptamos a las necesidades de tu empresa y de tu
-            personal.
+            personal. <br><br>
+            <button type="button" class="btn btn-info contacto " 
+                onclick="location.href='empresas.html'">visitar sección</button>
           </span>
         </div>
       </div>
@@ -338,21 +342,21 @@
           <div class="row texto-curso col-md-12" id="international-tests-texto">
             <span class="row">
               <span>
-                Somos el primer centro examinador de <strong>Path</strong> de Cuyo. 
-                Preparaci&oacute;n anual de exámenes internacionales 
-                que permite al alumno pulir y alcanzar las habilidades y nociones
-                indispensables para obtener dicha certificaci&oacute;n. 
-                Mediante nuestra preparaci&oacute;n los alumnos podrán experimentar ex&aacute;menes
-                internacionales
-                comunicativos que eval&uacute;an el conocimiento del idioma en contextos
-                aut&eacute;nticos y realistas.
+                Somos el primer centro de preparación y examinador de exámenes internacionales 
+                de <strong>Path</strong> de Cuyo. <br>
+                Centro de preparación de la <strong>Universidad de Cambridge</strong> 
               </span>
 
               <span class="col-sm-12 ">
-                <img style="width:100%; height: auto" src="img/path.png" alt="Path Examination logo"
-                  onclick="window.open('www.pathlatam.com')">
+                <img style="width:48%; height: auto" src="img/path.png" alt="Path Examination logo"
+                  onclick="window.open('https://www.pathlatam.com')">
+                <img style="width:48%" src="img/prep-centre-logo_RGB.png" alt="Cambridge University examination logo"
+                  onclick="window.open('https://www.cambridgeenglish.org/latinamerica/exams-and-tests/')">
               </span>
 
+
+              <button type="button" class="btn btn-info contacto" 
+              onclick="location.href='examenes.html'">visitar sección</button>
           </div>
         </div>
       </div>
@@ -418,7 +422,6 @@
 </body>
 
 <script>
-  scrollFunction();
   // When the user scrolls down 50px from the top of the document, resize the header's font size
   window.onscroll = function () {
     scrollFunction()
@@ -472,6 +475,7 @@
 
 <script>
   $(document).ready(function () {
+    scrollFunction();
     $('[data-toggle="popover"]').popover();
     
     $(document).scroll(function() {
@@ -486,57 +490,6 @@
       }
     });
   });
-</script>
-
-
-<script type="text/javascript">
-
-  // Captcha Script
-  
-  function checkform(theform){
-    var why = "";
-    
-    if(theform.claveInput.value == ""){
-      why += "- Por favor, ingrese el código CAPTCHA.\n";
-    }
-    if(theform.claveInput.value != ""){
-      if(ValidCaptcha(theform.claveInput.value) == false){
-        why += "- El código CAPTCHA no coincide.\n";
-      }
-    }
-    if(why !== ""){
-      alert(why);
-      return false;
-    }
-
-    return submitted=true;
-  }
-  
-  var a = Math.ceil(Math.random() * 9)+ '';
-  var b = Math.ceil(Math.random() * 9)+ '';
-  var c = Math.ceil(Math.random() * 9)+ '';
-  var d = Math.ceil(Math.random() * 9)+ '';
-  var e = Math.ceil(Math.random() * 9)+ '';
-  
-  var code = a + b + c + d + e;
-  document.getElementById("claveForm").value = code;
-  document.getElementById("claveDiv").innerHTML = code;
-  
-  // Validate input against the generated number
-  function ValidCaptcha(){
-    var str1 = removeSpaces(document.getElementById('claveForm').value);
-    var str2 = removeSpaces(document.getElementById('claveInput').value);
-    if (str1 == str2){
-      return true;
-    }else{
-      return false;
-    }
-  }
-  
-  // Remove the spaces from the entered and generated code
-  function removeSpaces(string){
-    return string.split(' ').join('');
-  }
 </script>
   
 </html>
