@@ -32,18 +32,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <body id="empresas">
+  <body id="examenes">
     <!-- <div id="empresas-bg">
             <img src="img/in-company.jpg" alt="">
         </div> -->
 
     <header class="container">
-      <img
-        class="row"
-        id="guarda-superior"
-        src="img/guardasuperior.png"
-        alt="decoracion-top"
-      />
       <nav class="topnav" id="myTopnav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -69,32 +63,28 @@
           alt=""
           class="img-responsive center-img mx-auto d-block"
         />
-        <h2 >
+        <h2>
           <strong>
-            Nuestra preparación te va a permitir pulir y alcanzar las
+            Nuestra preparación te permitirá pulir y alcanzar las
             habilidades y nociones indispensables para obtener una
             certificaci&oacute;n internacional.
           </strong>
         </h2>
         <br />
       </div>
-      
 
       <div class="row">
         <hr />
         <h2 class="text-center">Podés preparar</h2>
       </div>
-      <div class="row ">
+      <div class="row">
         <div class="col-xs-12 col-md-6">
           <a
-            href="www.pathlatam.com"
+            href="http://www.pathlatam.com"
             target="_blank"
             class="list-group-item text-center"
           >
-            <div>
-              <!-- <h3 class="list-group-item-heading">Gori</h4>
-                        <p class="list-group-item-text">The International Specialized Logistics Freight Forwarder For Wine & Spirits.
-                        </p> -->
+            <div class="img-container">
               <img
                 src="img/path.png"
                 alt="Logo Path"
@@ -110,10 +100,7 @@
             target="_blank"
             class="list-group-item text-center"
           >
-            <div>
-              <!-- <h3 class="list-group-item-heading">Merengue Media</h4>
-                        <p class="list-group-item-text"> 🌎 SocialMedia •🖌️ Diseño • 🎯 Marketing •💡Estrategia ♥️ Identidad • 🎬 Audiosivuales </p> -->
-
+            <div class="img-container">
               <img
                 src="img/prep-centre-logo_RGB.png"
                 alt=" Logo Universidad de Cambridge"
@@ -160,7 +147,6 @@
       <div class="row footer-info">
         <div id="your-station">
           <div>#WitYourStation</div>
-          <!-- <img src="img/wityourstation-img.svg" alt=""> -->
         </div>
 
         <div class="social-networks">
@@ -185,15 +171,11 @@
         document.body.scrollTop > 50 ||
         document.documentElement.scrollTop > 50
       ) {
-        document.getElementById("guarda-superior").style.top = "-4vw";
         document.getElementById("guarda-inferior").style.bottom = "-6vw";
         document.querySelector("#your-station div").style.fontSize = "2vw";
-        logo.classList.add("scroll");
       } else {
-        document.getElementById("guarda-superior").style.top = "0 ";
         document.getElementById("guarda-inferior").style.bottom = "0";
         document.querySelector("#your-station div").style.fontSize = "3vw";
-        logo.classList.remove("scroll");
       }
     }
   </script>
