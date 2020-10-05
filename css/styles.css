@@ -183,7 +183,7 @@ i {
 }
 
 #empresas .topnav, #examenes .topnav {
-  background-color: #2278a3;
+  background-color: #c5306f;
   padding: 1.5em;
 }
 
@@ -254,8 +254,8 @@ nav.topnav ul li a.active {
 
 section.btn-pagar{
   position: fixed;
-  right: 5%;
-  top: 20%;
+  right: 10%;
+  top: 30%;
   width: auto;
 }
 
@@ -263,6 +263,7 @@ section.btn-pagar > button {
   background-color: rgb(93, 61, 168);
   border-color: rgb(93, 61, 168);
   color: #FFF!important;
+  font-size: 1.5em;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -469,9 +470,8 @@ header {
   z-index: 1000;
 }
 
-body#empresas header{
-  background-color: #2278a3;
-  ;
+body#empresas header, body#examenes header{
+  background-color: #c5306f;
 }
 
 header.container {
@@ -836,10 +836,14 @@ button#boton-inscribite-cursos {
   bottom: 15vh;
   z-index: 100;
   font-size: 1.5em;
-  -moz-animation: jump  1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
-  -webkit-animation: jump 1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
-  -o-animation: jump 1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
-  animation: jump 1s 4s infinite cubic-bezier(.84,-0.54,.31,1.19);
+  
+}
+
+button#boton-inscribite-cursos:hover {
+  -moz-animation: jump  1s 2s  cubic-bezier(.84,-0.54,.31,1.19);
+  -webkit-animation: jump 1s 2s cubic-bezier(.84,-0.54,.31,1.19);
+  -o-animation: jump 1s 2s  cubic-bezier(.84,-0.54,.31,1.19);
+  animation: jump 1s 2s  cubic-bezier(.84,-0.54,.31,1.19);
 }
 
 @keyframes jump {
