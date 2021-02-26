@@ -486,7 +486,8 @@ header {
 }
 
 body#empresas header,
-body#examenes header {
+body#examenes header,
+body#horarios header {
   /* background-color: #c5306f; */
 }
 

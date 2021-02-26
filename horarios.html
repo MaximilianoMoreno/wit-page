@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wit English Learning Station</title>
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/wit-logo-color.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.11" />
+    <link
+      href="css/bootstrap-grid-system.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/horarios.js"></script>
+  
+  </head>
+  <body id="horarios">
+    <!-- <div id="overlay">
+      <div id="text">cargando</div>
+    </div> -->
+
+    <header class="container">
+      <nav class="topnav" id="myTopnav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="students" target="_blank">Plataforma</a></li>
+          <li><a href="empresas.html">Empresas</a></li>
+          <li><a class="active" href="examenes.html">Exámenes</a></li>
+          <li><a href="inscripcion.html" target="_blank">Inscripciones</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img class="logo" src="img/wit-logo-completo.png" alt="logo wit" />
+    </header>
+
+    <div class="container-fluid seccion">
+      <div class="row">
+        <!-- <h1 class="text-center">Exámenes Internacionales</h1> -->
+        <img
+          id="bg"
+          src="img/horarios.jpg"
+          alt=""
+          class="img-responsive center-block""
+        />
+        <h2 id="bg-txt">
+          <strong>
+            Horarios de cursado
+          </strong>
+        </h2>
+        <br />
+      </div>
+
+      <div class="row">
+        <hr />
+        <h2 class="text-center">¿Sabés cuándo te toca cursar?</h2>
+      </div>
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 3</strong>  - <span id="dia-cursado"></span> </h4>
+          <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+            <iframe id="url-iframe" frameborder="0" width="1200" height="675" style="width: 100vw; height: 100vh;" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row contact-telefono">
+        <h4 class="row"></i>Escribinos</h4>
+        <h4 class="row">
+          <a href="mailto:info@witenglish.com.ar?Subject=No%encuentro%mi%horario" target="_top">
+            <strong>info@witenglish.com.ar</strong> 
+        </h4>
+      </div>
+      
+    </div>
+
+    <footer class="container">
+      <img id="guarda-inferior" src="img/guardainferior.png" alt="" />
+
+      <div class="row footer-info">
+        <div id="your-station">
+          <div>#WitYourStation</div>
+        </div>
+
+        <div class="social-networks">
+          <img src="img/whatsapp.svg" alt="" />
+          <img src="img/facebook.svg" alt="" />
+          <img src="img/instagram.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+
+    $(document).ready(function () {
+      init();
+    });
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      var logo = document.getElementsByClassName("logo")[0];
+
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        document.getElementById("guarda-inferior").style.bottom = "-6vw";
+        document.querySelector("#your-station div").style.fontSize = "2vw";
+      } else {
+        document.getElementById("guarda-inferior").style.bottom = "0";
+        document.querySelector("#your-station div").style.fontSize = "3vw";
+      }
+    }
+  </script>
+</html>
