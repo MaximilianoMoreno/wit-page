@@ -93,7 +93,7 @@
       </iframe>
     </section>
     <section class="container btn-pagar">
-      <button
+      <!-- <button
         class="btn btn-primary"
         mp-mode="dftl"
         href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=177084000-f29d6ace-8d8b-4365-a788-b37f171538ef"
@@ -125,7 +125,11 @@
               : window.addEventListener("load", $MPC_load, false)
             : null;
         })();
-      </script>
+      </script> -->
+      <script
+        src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+        data-preference-id="177084000-fa60bfaf-cd3c-414b-ad9e-cfae1e67c16e"
+      ></script>
     </section>
 
     <footer class="container">
