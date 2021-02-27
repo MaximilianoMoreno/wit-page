@@ -31,14 +31,59 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/horarios.js"></script>
-  
   </head>
-  <body id="horarios">
-    <!-- <div id="overlay">
-      <div id="text">cargando</div>
-    </div> -->
 
+  <style>
+    #bg-txt {
+      top: 50%;
+    } 
+
+    .secciones{
+      display: flex;
+      justify-content: space-around;
+      width: 57%;
+      margin: 0 auto;
+    }
+
+    .frame-container{
+      position: relative;
+      padding-bottom: 2.25%;
+      padding-top: 0;
+      height: 100%;
+    }
+
+    .frame-container .frame {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    @media (max-device-width: 425px) {
+      #bg-txt {
+        display: none;
+      }
+      .secciones {
+        display: flex;
+        flex-direction: column;
+      }
+      .secciones .btn{
+        margin: 0.1em auto;
+      }
+
+      .frame-container{
+       
+        position: relative;
+        padding-bottom: 2.25%;
+        padding-top: 0;
+        height: 100%;
+      }
+
+      .frame-container .frame{
+        width: 90vw;
+        height: auto;
+      }
+    }
+  </style>
+  <body id="horarios">
     <header class="container">
       <nav class="topnav" id="myTopnav">
         <ul>
@@ -68,25 +113,178 @@
         />
         <h2 id="bg-txt">
           <strong>
-            Horarios de cursado
+            ¿Sabés cuándo te toca cursar?
           </strong>
         </h2>
         <br />
       </div>
-
       <div class="row">
-        <hr />
-        <h2 class="text-center">¿Sabés cuándo te toca cursar?</h2>
+        <div class="secciones">
+           <a href="#ninos" class="btn btn-primary">NIÑOS</a>
+           <a href="#adolescentes" class="btn btn-primary">ADOLESCENTES</a>
+           <a href="#adultos" class="btn btn-primary">ADULTOS</a>
+           <a href="#perfecting" class="btn btn-primary">PERFECTING</a>
+        </div>
+      </div>
+    
+     
+
+      <div class="row" id="ninos">
+        <h2 class="text-center">CURSOS DE NIÑOS </h2>
       </div>
       <div class="row center-block"">
         <div class="center-block"">
-          <h4>Info: <strong id="nombre-curso">Adults 3</strong>  - <span id="dia-cursado"></span> </h4>
-          <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
-            <iframe id="url-iframe" frameborder="0" width="1200" height="675" style="width: 100vw; height: 100vh;" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          <h4>Info: <strong id="nombre-curso">Kids 1</strong>  - <span id="dia-cursado">LUNES Y MIÉRCOLES de 17 a 18.30</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+      
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Big kids 1</strong>  - <span id="dia-cursado">LUNES Y MIÉRCOLES de 18.45 a 20.15</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
           </div>
         </div>
       </div>
       <hr />
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso"> Kids 1</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 10 a 11.30</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso"> Kids 1</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 18.45 a 20.15</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso"> Kids 2</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 18.45 a 20.15</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row" id="adolescentes">
+        <h2 class="text-center">CURSOS DE ADOLESCENTES</h2>
+      </div>
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Youngsters 2</strong>  - <span id="dia-cursado">LUNES Y MIÉRCOLES de 18.45 a 20.15</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Youngsters 1</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 17.00 a 18.3</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Youngsters 1</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 18.45 a 20.15</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+
+      <div class="row" id="adultos">
+        <h2 class="text-center">CURSOS DE ADULTOS</h2>
+      </div>
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 1</strong>  - <span id="dia-cursado">LUNES Y MIÉRCOLES de 10 a 11.30</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 2</strong>  - <span id="dia-cursado">LUNES Y MIÉRCOLES de 20.30 a 22</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 3</strong>  - <span id="dia-cursado">LUNES Y MIÉRCOLES de 10 a 11.30</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60245475cd123c0d1ce7ebf2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />       
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 4</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 20.30 a 22</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />    
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 5</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 20.30 a 22</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/602325813cb0490d27f878fa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr />  
+
+      <div class="row" id="perfecting">
+        <hr />
+        <h2 class="text-center">PERFECTING</h2>
+      </div>
+
+      <div class="row center-block"">
+        <div class="center-block"">
+          <h4>Info: <strong id="nombre-curso">Adults 1</strong>  - <span id="dia-cursado">MARTES Y JUEVES de 20.30 a 22.00</span> </h4>
+          <div class="frame-container">
+            <iframe frameborder="0" width="1200" height="675" class="frame" src="https://view.genial.ly/60242528cd123c0d1ce7e846" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr /> 
+
 
       <div class="row contact-telefono">
         <h4 class="row"></i>Escribinos</h4>
@@ -117,9 +315,6 @@
 
   <script>
 
-    $(document).ready(function () {
-      init();
-    });
     // When the user scrolls down 50px from the top of the document, resize the header's font size
     window.onscroll = function () {
       scrollFunction();

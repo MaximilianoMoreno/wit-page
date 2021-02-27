@@ -69,12 +69,14 @@ body#main h1 {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-body#empresas header {
+body#empresas header,
+body#horarios header {
   position: absolute;
 }
 
 body#empresas div.seccion,
-body#examenes div.seccion {
+body#examenes div.seccion,
+body#horarios div.seccion {
   margin: 0em auto;
 }
 
@@ -187,7 +189,8 @@ i {
 }
 
 #empresas .topnav,
-#examenes .topnav {
+#examenes .topnav,
+#horarios .topnav {
   /* background-color: #c5306f;
   padding: 1.5em; */
 }
@@ -485,10 +488,10 @@ header {
   z-index: 1000;
 }
 
-body#empresas header,
-body#examenes header,
+/* body#empresas header,
+body#examenes header, */
 body#horarios header {
-  /* background-color: #c5306f; */
+  background-color: #c5306f;
 }
 
 header.container {
@@ -535,7 +538,8 @@ img.logo {
 }
 
 #empresas img.logo,
-#examenes img.logo {
+#examenes img.logo,
+#horarios img.logo {
   transition: 1.5s;
   position: absolute;
   top: 1.5em;
