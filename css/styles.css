@@ -287,7 +287,8 @@ section.btn-pagar > button {
 }
 
 .map-frame {
-  width: 75%;
+  width: 100%;
+  padding: 0 13%;
 }
 
 /* .equal {
