@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/cursos.css?v=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <h2>Vertical Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+    <div class="cursos-container">
+      <div class="tab">
+        <button
+          class="tablinks little-ones-bg"
+          onclick="abrirCurso(event, 'little-ones')"
+          id="defaultOpen"
+        >
+          <span class="edad-curso">4-5 años</span>
+          <span class="nombre-curso">little ones</span>
+        </button>
+        <button class="tablinks pre-kids-bg" onclick="abrirCurso(event, 'pre-kids')">
+          <span class="edad-curso">6-7 años</span>
+          <span class="nombre-curso">pre-kids</span>
+        </button>
+        <button class="tablinks kids-bg" onclick="abrirCurso(event, 'kids')">
+          <span class="edad-curso">8-10 años</span>
+          <span class="nombre-curso">kids</span>
+        </button>
+        <button class="tablinks big-kids-bg" onclick="abrirCurso(event, 'big-kids')">
+          <span class="edad-curso">10-13 años</span>
+          <span class="nombre-curso">big kids</span>
+        </button>
+        <button class="tablinks youngsters-bg" onclick="abrirCurso(event, 'youngsters')">
+          <span class="edad-curso">14-17 años</span>
+          <span class="nombre-curso">youngsters</span>
+        </button>
+        <button class="tablinks adults-bg" onclick="abrirCurso(event, 'adults')">
+          <span class="edad-curso">+18 años</span>
+          <span class="nombre-curso">adults</span>
+        </button>
+        <button class="tablinks perfecting-bg" onclick="abrirCurso(event, 'perfecting')">
+          <span class="edad-curso">18+ años</span>
+          <span class="nombre-curso">perfecting</span>
+      </div>
+
+      <div id="little-ones" class="tabcontent">
+        <div class="wrapper">
+          <div class="left little-ones-bg ">
+            <h3 class="titulo">Little Ones</h3>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right">
+            <img src="img/littleones-01.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="pre-kids" class="tabcontent">
+        <div class="wrapper ">
+          <div class="left pre-kids-bg">
+            <h3 class="titulo">Pre-Kids</h3>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right">
+            <img src="img/prekids-01.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="kids" class="tabcontent">
+        <div class="wrapper ">
+          <div class="left kids-bg">
+            <h3 class="titulo">Kids</h3>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right">
+            <img src="img/kids-01.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="big-kids" class="tabcontent">
+        <div class="wrapper ">
+          <div class="left big-kids-bg">
+            <h3 class="titulo">Big Kids</h3>
+            <nav>
+              <ul class="nivel">
+                <li class="big-kids-bg item-nivel">1</li>
+                <li class="big-kids-bg item-nivel">2</li>
+                <li class="big-kids-bg item-nivel">3</li>
+                <li class="big-kids-bg item-nivel">4</li>
+                <li class="big-kids-bg item-nivel">5</li>
+                <li class="big-kids-bg item-nivel">6</li>
+              </ul>
+            </nav>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right big-kids-img">
+            <img src="img/bigkids-01.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="youngsters" class="tabcontent">
+        <div class="wrapper ">
+          <div class="left youngsters-bg">
+            <h3 class="titulo">Youngsters</h3>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right youngsters-kids-img">
+            <img src="img/youngsters-01.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="adults" class="tabcontent">
+        <div class="wrapper"> 
+          <div class="left adults-bg">
+            <h3 class="titulo">Adults</h3>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right adults-img">
+            <img src="img/adults-01.png" alt="">
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="perfecting" class="tabcontent">
+        <div class="wrapper"> 
+          <div class="left perfecting-bg">
+            <h3 class="titulo">Perfecting</h3>
+            <p>Aptitudes y competencias</p>
+          </div>
+          <div class="right perfecting-img">
+            <img src="img/perfecting-01.png" alt="">
+          </div>
+        </div>
+    </div>
+
+    <script>
+      function abrirCurso(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
