@@ -15,6 +15,7 @@
   margin: 50px auto;
   font-family: "Montserrat", sans-serif !important;
   color: var(--texto-oscuro);
+  width: 85%;
 }
 
 .perspectiva .margen-curso.little-ones-bg {
