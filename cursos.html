@@ -1,59 +1,83 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/cursos.css?v=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <h2>Vertical Tabs</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
-    <div class="cursos-container">
-      <div class="tab">
-        <button
-          class="tablinks little-ones-bg"
-          onclick="abrirCurso(event, 'little-ones')"
-          id="defaultOpen"
-        >
-          <span class="edad-curso">4-5 años</span>
-          <span class="nombre-curso">little ones</span>
-        </button>
-        <button class="tablinks pre-kids-bg" onclick="abrirCurso(event, 'pre-kids')">
-          <span class="edad-curso">6-7 años</span>
-          <span class="nombre-curso">pre-kids</span>
-        </button>
-        <button class="tablinks kids-bg" onclick="abrirCurso(event, 'kids')">
-          <span class="edad-curso">8-10 años</span>
-          <span class="nombre-curso">kids</span>
-        </button>
-        <button class="tablinks big-kids-bg" onclick="abrirCurso(event, 'big-kids')">
-          <span class="edad-curso">10-13 años</span>
-          <span class="nombre-curso">big kids</span>
-        </button>
-        <button class="tablinks youngsters-bg" onclick="abrirCurso(event, 'youngsters')">
-          <span class="edad-curso">14-17 años</span>
-          <span class="nombre-curso">youngsters</span>
-        </button>
-        <button class="tablinks adults-bg" onclick="abrirCurso(event, 'adults')">
-          <span class="edad-curso">+18 años</span>
-          <span class="nombre-curso">adults</span>
-        </button>
-        <button class="tablinks perfecting-bg" onclick="abrirCurso(event, 'perfecting')">
-          <span class="edad-curso">18+ años</span>
-          <span class="nombre-curso">perfecting</span>
-      </div>
 
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/cursos.css?v=1.0" />
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- <h2>Vertical Tabs</h2>
+  <p>Click on the buttons inside the tabbed menu:</p> -->
+  <div class="cursos-container">
+
+    <div class="perspectiva">
+      <div class="margen-curso little-ones-bg">
+      </div>
+      <div class="margen-curso pre-kids-bg">
+      </div>
+      <div class="margen-curso kids-bg">
+      </div>
+      <div class="margen-curso big-kids-bg">
+      </div>
+      <div class="margen-curso youngsters-bg">
+      </div>
+      <div class="margen-curso adults-bg">
+      </div>
+      <div class="margen-curso perfecting-bg">
+      </div>
+    </div>
+
+    <div class="tab">
+      <button class="tablinks little-ones-bg" onclick="abrirCurso(event, 'little-ones')" id="defaultOpen">
+        <span class="edad-curso">4-5 años</span>
+        <span class="nombre-curso">little ones</span>
+      </button>
+      <button class="tablinks pre-kids-bg" onclick="abrirCurso(event, 'pre-kids')">
+        <span class="edad-curso">6-7 años</span>
+        <span class="nombre-curso">pre-kids</span>
+      </button>
+      <button class="tablinks kids-bg" onclick="abrirCurso(event, 'kids')">
+        <span class="edad-curso">8-10 años</span>
+        <span class="nombre-curso">kids</span>
+      </button>
+      <button class="tablinks big-kids-bg" onclick="abrirCurso(event, 'big-kids')">
+        <span class="edad-curso">10-13 años</span>
+        <span class="nombre-curso">big kids</span>
+      </button>
+      <button class="tablinks youngsters-bg" onclick="abrirCurso(event, 'youngsters')">
+        <span class="edad-curso">14-17 años</span>
+        <span class="nombre-curso">youngsters</span>
+      </button>
+      <button class="tablinks adults-bg" onclick="abrirCurso(event, 'adults')">
+        <span class="edad-curso">+18 años</span>
+        <span class="nombre-curso">adults</span>
+      </button>
+      <button class="tablinks perfecting-bg" onclick="abrirCurso(event, 'perfecting')">
+        <span class="edad-curso">18+ años</span>
+        <span class="nombre-curso">perfecting</span>
+      </button>
+    </div>
+
+    <div class="description">
       <div id="little-ones" class="tabcontent">
         <div class="wrapper">
           <div class="left little-ones-bg ">
             <h3 class="titulo">Little Ones</h3>
-            <p>Aptitudes y competencias</p>
+            <!-- <p>Aptitudes y competencias</p> -->
+            <div class="texto-curso">
+              Programa especializado para niños de <strong> 4 a 5 años </strong> que potencia sus habilidades motoras,
+              imaginación y lingüísticas a través del juego. Estimulamos la conciencia fonol&oacute;gica desde temprana
+              edad a través
+              de PHONICS.
+              <br> Cursado 2 dos horas semanales.
+              <br> Lunes y Miércoles / Martes y Jueves.
+              <br> Horarios: mañana y tarde.
+            </div>
           </div>
           <div class="right">
             <img src="img/littleones-01.png" alt="">
@@ -65,7 +89,15 @@
         <div class="wrapper ">
           <div class="left pre-kids-bg">
             <h3 class="titulo">Pre-Kids</h3>
-            <p>Aptitudes y competencias</p>
+            <div class="texto-curso">
+              Programa especializado para niños de <strong> 6 a 7 años </strong> que potencia sus habilidades motoras,
+              imaginación y lingüísticas a través del juego. Estimulamos la conciencia fonol&oacute;gica desde temprana
+              edad a través
+              de PHONICS.
+              <br> Cursado 2 dos horas semanales.
+              <br> Lunes y Miércoles / Martes y Jueves.
+              <br> Horarios: mañana y tarde.
+            </div>
           </div>
           <div class="right">
             <img src="img/prekids-01.png" alt="">
@@ -77,7 +109,16 @@
         <div class="wrapper ">
           <div class="left kids-bg">
             <h3 class="titulo">Kids</h3>
-            <p>Aptitudes y competencias</p>
+            <div class="texto-curso">
+              Programa especializado para niños de <strong>8 a 10 años</strong> que permite potenciar sus habilidades
+              cognitivas y
+              lingü&iacute;sticas a través del juego y experiencias significativas de la mano de la ciencia, el teatro,
+              historia y
+              mucho más. Estimulamos la conciencia fonol&oacute;gica a través de PHONICS.
+              <br> Cursado de 3 horas semanales.
+              <br> Lunes y Miércoles / Martes y Jueves.
+              <br> Horarios: mañana y tarde.
+            </div>
           </div>
           <div class="right">
             <img src="img/kids-01.png" alt="">
@@ -89,7 +130,7 @@
         <div class="wrapper ">
           <div class="left big-kids-bg">
             <h3 class="titulo">Big Kids</h3>
-            <nav>
+            <!-- <nav>
               <ul class="nivel">
                 <li class="big-kids-bg item-nivel">1</li>
                 <li class="big-kids-bg item-nivel">2</li>
@@ -99,7 +140,17 @@
                 <li class="big-kids-bg item-nivel">6</li>
               </ul>
             </nav>
-            <p>Aptitudes y competencias</p>
+            <p>Aptitudes y competencias</p> -->
+            <div class="texto-curso">
+              Programa especializado para niños de <strong>11 a 13 años</strong> que permite potenciar sus habilidades
+              cognitivas y
+              lingü&iacute;sticas a través del juego y experiencias significativas de la mano de la ciencia, el teatro,
+              historia y
+              mucho más. Estimulamos la conciencia fonol&oacute;gica a través de PHONICS.
+              <br> Cursado de 3 horas semanales.
+              <br> Lunes y Miércoles / Martes y Jueves.
+              <br> Horarios: mañana y tarde.
+            </div>
           </div>
           <div class="right big-kids-img">
             <img src="img/bigkids-01.png" alt="">
@@ -111,7 +162,15 @@
         <div class="wrapper ">
           <div class="left youngsters-bg">
             <h3 class="titulo">Youngsters</h3>
-            <p>Aptitudes y competencias</p>
+            <div class="row texto-curso" id="youngsters-texto">
+              Programa para j&oacute;venes de <strong>14 a 17 años</strong> que garantiza su diversión y
+              fomenta la adquisición del lenguaje trav&eacute;s de
+              actividades pensadas para ellos. Conocerán de la mano del inglés un mundo lleno de oportunidades y
+              conocimientos.
+              <br> Cursado de 3 horas semanales.
+              <br> Lunes y Miércoles
+              <br> Horario: tarde
+            </div>
           </div>
           <div class="right youngsters-kids-img">
             <img src="img/youngsters-01.png" alt="">
@@ -120,47 +179,70 @@
       </div>
 
       <div id="adults" class="tabcontent">
-        <div class="wrapper"> 
+        <div class="wrapper">
           <div class="left adults-bg">
             <h3 class="titulo">Adults</h3>
-            <p>Aptitudes y competencias</p>
+            <div class="texto-curso">
+              Programa especializado para adultos mayores de <strong>18 años</strong>que garantiza la comunicación
+              fluida
+              del idioma y
+              habilidades útiles para el mundo del trabajo. La diversión y el juego también son un ingrediente
+              fundamental
+              para los
+              adultos. Nunca es tarde para aprender y ¡qué mejor que hacerlo jugando!
+              <br> Cursado de 3 horas semanales.
+              <br> Lunes y Miércoles / Martes y Jueves
+              <br> Horarios: mañana y vespertinos
+
+            </div>
           </div>
           <div class="right adults-img">
             <img src="img/adults-01.png" alt="">
           </div>
         </div>
-        
+
       </div>
 
       <div id="perfecting" class="tabcontent">
-        <div class="wrapper"> 
+        <div class="wrapper">
           <div class="left perfecting-bg">
             <h3 class="titulo">Perfecting</h3>
-            <p>Aptitudes y competencias</p>
+            <div class="texto-curso">
+              Programa diseñado para adultos con nivel de inglés B2 en adelante que deseen pulir y explorar nuevas
+              opciones con el idioma mediante la interacci&oacute;n grupal, el juego y la improvisaci&oacute;n con una
+              carga horaria de 2 horas los días mi&eacute;rcoles. La incoporaci&oacute;n de los alumnos a este
+              est&aacute;
+              sujeta a los resultados del Placement.
+            </div>
           </div>
           <div class="right perfecting-img">
             <img src="img/perfecting-01.png" alt="">
           </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <script>
-      function abrirCurso(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+
+
+  <script>
+    function abrirCurso(evt, cityName) {
+      let i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
       }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "flex";
+      evt.currentTarget.className += " active";
+    }
 
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-    </script>
-  </body>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
 </html>
