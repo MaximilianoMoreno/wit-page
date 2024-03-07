@@ -525,6 +525,7 @@ header.container {
 }
 
 #guarda-superior {
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -534,7 +535,7 @@ header.container {
 }
 
 .contenedor-home {
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .hello {
@@ -595,7 +596,17 @@ img.logo.scroll {
 }
 
 .puertas {
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+  height: 20vh;
   font-size: 2em;
+}
+.esperanos {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 0;
+  padding-left: 0.5em;
+  color: #66c1b3;
 }
 
 .hashtag {
@@ -782,7 +793,7 @@ img.logo.scroll {
 }
 
 .recuadro.logo {
-  margin-top: 35vh;
+  margin-top: 30vh;
   height: 20vh;
 }
 
@@ -821,6 +832,7 @@ footer {
 }
 
 #guarda-inferior {
+  width: 100vw;
   position: fixed;
   bottom: 0;
   left: 0;

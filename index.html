@@ -10,7 +10,7 @@
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-167951482-2');
@@ -23,8 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description"
     CONTENT="Enseñanza de lengua inglesa, Aprender rápido, Idiomas. Niños, jovenes, adolescentes y adultos, todas las edades">
-  <link rel="stylesheet" type="text/css" href="css/cursos.css?v=1.0" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.12">
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.15">
   <link href="css/bootstrap-grid-system.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -37,37 +36,33 @@
 <body id="main">
   <header class="container">
     <img class="row" id="guarda-superior" src="img/guardasuperior.png" alt="decoracion-top">
-    <nav class="topnav" id="myTopnav">
-      <ul>
-        <li><a class="active" href="#home">Inicio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#Metodologia">Metodología</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="students" target="_blank">Plataforma</a></li>
-        <li><a href="empresas.html">Empresas</a></li>
-        <li><a href="examenes.html">Exámenes</a></li>
-        <li><a href="traducciones.html">Traducciones</a></li>
-        <li>
-          <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <nav class="topnav" id="myTopnav">
+        <ul>
+          <li><a class="active" href="#home">Inicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="students" target="_blank">Plataforma</a></li>
+          <li><a href="empresas.html">Empresas</a></li>
+          <li><a href="examenes.html">Exámenes</a></li>
+          <li><a href="inscripcion.html" target="_blank">Inscripciones</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+              <i class="fa fa-bars"></i>
+            </a>
         </li>
-      </ul>
-    </nav>
-    <img class="logo col-md-2 col-md-offset-10" src="img/wit-logo-completo.png" alt="logo wit">
-
-
+        </ul>
+      </nav>
+      <img class="logo col-md-2 col-md-offset-10" src="img/wit-logo-completo.png" alt="logo wit">
+   
+    
   </header>
 
-  <h1>Wit English Learning Station, Inglés en Mendoza, clases online</h1>
+  <h1>Wit English, Inglés en Mendoza, clases online</h1>
 
   <div class="container">
 
     <div class="row bgimg-1" id="home">
       <div class="contenedor-home">
-        <img class="hello col-sm-3 hide-left" src="img/hello.png" alt="saludando en ingles">
-
-        <div class="recuadro col-md-offset-3 logo col-md-9 col-xs-12">
+        <!-- <div class="recuadro col-md-offset-3 logo col-md-9 col-xs-12">
           <div class="content">
             <div class="content__container">
               <p class="content__container__text">
@@ -85,9 +80,9 @@
 
 
 
-        </div>
+        </div> -->
         <p class="puertas">
-          Las puertas del mundo se abren primero en <br> <span class="hashtag">#WitYourStation</span>
+          Hey you! <br> <span class="hashtag">En Wit English nos estamos renovando</span> <br> <span class="esperanos">Esperanos</span>
         </p>
       </div>
     </div>
@@ -121,8 +116,7 @@
               value="" />
           </div>
           <div class="form-group lrg-btn">
-            <input type="button" name="btnConfirm" class="btnContact" value="Enviar" data-toggle="modal"
-              data-target="#exampleModal" />
+            <input type="button" name="btnConfirm" class="btnContact" value="Enviar"  data-toggle="modal" data-target="#exampleModal"/>
           </div>
 
         </div>
@@ -136,14 +130,12 @@
       </div>
       <div class="col-md-12">
         <div class="form-group md-btn">
-          <input type="buttOn" name="btnConfirm" class="btnContact" value="Enviar" data-toggle="modal"
-            data-target="#exampleModal" />
+          <input type="buttOn" name="btnConfirm" class="btnContact" value="Enviar"  data-toggle="modal" data-target="#exampleModal"  />
         </div>
       </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -153,10 +145,10 @@
               </button>
             </div>
             <div class="modal-body">
-              <!-- START CAPTCHA -->
+               <!-- START CAPTCHA -->
               <div class="capbox">
                 <div id="claveDiv"></div>
-                <div class="capbox-inner">
+                  <div class="capbox-inner">
                   Ingrese el número:<br>
                   <input type="hidden" id="claveForm">
                   <input type="text" name="claveInput" id="claveInput" size="15"><br>
@@ -168,7 +160,7 @@
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button> -->
               <!-- <button type="button" class="btn btn-primary">Aceptar</button> -->
 
-              <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+              <input type="submit" name="btnSubmit" class="btnContact" value="Enviar"/>
             </div>
           </div>
         </div>
@@ -176,413 +168,49 @@
     </form>
   </div>
 
-  <div class="container container-metodologia" id="Metodologia">
-    <div>
-
-      <div class="col-md-6 col-align--center video-container">
-        <iframe class="video-frame" title="video explicativo de nuestra metodologia CLIL"
-          src="https://www.youtube.com/embed/-5AVrsnH4iE?controls=0&rel=0" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="col-md-6 col-align--center">
-        <div class="metodologia">
-          <p> En <strong>Wit English</strong> privilegiamos la comunicación y la fluidez del idioma dentro de cada clase
-            con un método innovador.
-          </p>
-          <br>
-          <p>Vení a divertirte y convertite en un CIUDADANO GLOBAL.</p>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-  </div>
-
-
-  <div class="cursos-container">
-
-    <div class="perspectiva">
-      <div class="margen-curso little-ones-bg">
-      </div>
-      <div class="margen-curso pre-kids-bg">
-      </div>
-      <div class="margen-curso kids-bg">
-      </div>
-      <div class="margen-curso big-kids-bg">
-      </div>
-      <div class="margen-curso youngsters-bg">
-      </div>
-      <div class="margen-curso adults-bg">
-      </div>
-      <div class="margen-curso perfecting-bg">
-      </div>
-    </div>
-
-    <div class="tab">
-      <button class="tablinks little-ones-bg" onclick="abrirCurso(event, 'little-ones')" id="defaultOpen">
-        <span class="edad-curso">4-5 años</span>
-        <span class="nombre-curso">little ones</span>
-      </button>
-      <button class="tablinks pre-kids-bg" onclick="abrirCurso(event, 'pre-kids')">
-        <span class="edad-curso">6-7 años</span>
-        <span class="nombre-curso">pre-kids</span>
-      </button>
-      <button class="tablinks kids-bg" onclick="abrirCurso(event, 'kids')">
-        <span class="edad-curso">8-10 años</span>
-        <span class="nombre-curso">kids</span>
-      </button>
-      <button class="tablinks big-kids-bg" onclick="abrirCurso(event, 'big-kids')">
-        <span class="edad-curso">10-13 años</span>
-        <span class="nombre-curso">big kids</span>
-      </button>
-      <button class="tablinks youngsters-bg" onclick="abrirCurso(event, 'youngsters')">
-        <span class="edad-curso">14-17 años</span>
-        <span class="nombre-curso">youngsters</span>
-      </button>
-      <button class="tablinks adults-bg" onclick="abrirCurso(event, 'adults')">
-        <span class="edad-curso">+18 años</span>
-        <span class="nombre-curso">adults</span>
-      </button>
-      <button class="tablinks perfecting-bg" onclick="abrirCurso(event, 'perfecting')">
-        <span class="edad-curso">18+ años</span>
-        <span class="nombre-curso">perfecting</span>
-      </button>
-    </div>
-
-    <div class="description">
-      <div id="little-ones" class="tabcontent">
-        <div class="wrapper">
-          <div class="left little-ones-bg ">
-            <h3 class="titulo">Little Ones</h3>
-            <!-- <p>Aptitudes y competencias</p> -->
-            <div class="texto-curso">
-              Programa especializado para niños de <strong> 4 a 5 años </strong> que potencia sus habilidades
-              motoras,
-              imaginación y lingüísticas a través del juego. Estimulamos la conciencia fonol&oacute;gica desde
-              temprana
-              edad a través
-              de PHONICS.
-              <br> Cursado 2 dos horas semanales.
-              <br> Lunes y Miércoles / Martes y Jueves.
-              <br> Horarios: mañana y tarde.
-            </div>
-          </div>
-          <div class="right">
-            <img src="img/littleones-01.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div id="pre-kids" class="tabcontent">
-        <div class="wrapper ">
-          <div class="left pre-kids-bg">
-            <h3 class="titulo">Pre-Kids</h3>
-            <div class="texto-curso">
-              Programa especializado para niños de <strong> 6 a 7 años </strong> que potencia sus habilidades
-              motoras,
-              imaginación y lingüísticas a través del juego. Estimulamos la conciencia fonol&oacute;gica desde
-              temprana
-              edad a través
-              de PHONICS.
-              <br> Cursado 2 dos horas semanales.
-              <br> Lunes y Miércoles / Martes y Jueves.
-              <br> Horarios: mañana y tarde.
-            </div>
-          </div>
-          <div class="right">
-            <img src="img/prekids-01.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div id="kids" class="tabcontent">
-        <div class="wrapper ">
-          <div class="left kids-bg">
-            <h3 class="titulo">Kids</h3>
-            <div class="texto-curso">
-              Programa especializado para niños de <strong>8 a 10 años</strong> que permite potenciar sus
-              habilidades
-              cognitivas y
-              lingü&iacute;sticas a través del juego y experiencias significativas de la mano de la ciencia, el
-              teatro,
-              historia y
-              mucho más. Estimulamos la conciencia fonol&oacute;gica a través de PHONICS.
-              <br> Cursado de 3 horas semanales.
-              <br> Lunes y Miércoles / Martes y Jueves.
-              <br> Horarios: mañana y tarde.
-            </div>
-          </div>
-          <div class="right">
-            <img src="img/kids-01.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div id="big-kids" class="tabcontent">
-        <div class="wrapper ">
-          <div class="left big-kids-bg">
-            <h3 class="titulo">Big Kids</h3>
-            <div class="texto-curso">
-              Programa especializado para niños de <strong>11 a 13 años</strong> que permite potenciar sus
-              habilidades
-              cognitivas y
-              lingü&iacute;sticas a través del juego y experiencias significativas de la mano de la ciencia, el
-              teatro,
-              historia y
-              mucho más. Estimulamos la conciencia fonol&oacute;gica a través de PHONICS.
-              <br> Cursado de 3 horas semanales.
-              <br> Lunes y Miércoles / Martes y Jueves.
-              <br> Horarios: mañana y tarde.
-            </div>
-          </div>
-          <div class="right big-kids-img">
-            <img src="img/bigkids-01.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div id="youngsters" class="tabcontent">
-        <div class="wrapper ">
-          <div class="left youngsters-bg">
-            <h3 class="titulo">Youngsters</h3>
-            <div class="row texto-curso" id="youngsters-texto">
-              Programa para j&oacute;venes de <strong>14 a 17 años</strong> que garantiza su diversión y
-              fomenta la adquisición del lenguaje trav&eacute;s de
-              actividades pensadas para ellos. Conocerán de la mano del inglés un mundo lleno de oportunidades y
-              conocimientos.
-              <br> Cursado de 3 horas semanales.
-              <br> Lunes y Miércoles
-              <br> Horario: tarde
-            </div>
-          </div>
-          <div class="right youngsters-kids-img">
-            <img src="img/youngsters-01.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div id="adults" class="tabcontent">
-        <div class="wrapper">
-          <div class="left adults-bg">
-            <h3 class="titulo">Adults</h3>
-            <div class="texto-curso">
-              Programa especializado para adultos mayores de <strong>18 años</strong>que garantiza la comunicación
-              fluida
-              del idioma y
-              habilidades útiles para el mundo del trabajo. La diversión y el juego también son un ingrediente
-              fundamental
-              para los
-              adultos. Nunca es tarde para aprender y ¡qué mejor que hacerlo jugando!
-              <br> Cursado de 3 horas semanales.
-              <br> Lunes y Miércoles / Martes y Jueves
-              <br> Horarios: mañana y vespertinos
-
-            </div>
-          </div>
-          <div class="right adults-img">
-            <img src="img/adults-01.png" alt="">
-          </div>
-        </div>
-
-      </div>
-
-      <div id="perfecting" class="tabcontent">
-        <div class="wrapper">
-          <div class="left perfecting-bg">
-            <h3 class="titulo">Perfecting</h3>
-            <div class="texto-curso">
-              Programa diseñado para adultos con nivel de inglés B2 en adelante que deseen pulir y explorar nuevas
-              opciones con el idioma mediante la interacci&oacute;n grupal, el juego y la improvisaci&oacute;n con
-              una
-              carga horaria de 2 horas los días mi&eacute;rcoles. La incoporaci&oacute;n de los alumnos a este
-              est&aacute;
-              sujeta a los resultados del Placement.
-            </div>
-          </div>
-          <div class="right perfecting-img">
-            <img src="img/perfecting-01.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <b class="hr"></b>
-
-
-    <div class="row" id="beneficios">
-      <h3>Beneficios </h3>
-
-      <button type="button" id="boton-inscribite-cursos" class="btn btn-info contacto "
-        onclick="location.href='inscripcion.html'">
-        ¡Conoce las promociones y beneficios!</button>
-
-      <div class="col-sm-12">
-        <div class="image col-xs-6">
-          <img src="img/ciudadu.png" alt="Ciudad Universitaria">
-        </div>
-        <div class="col-sm-offset-2 col-sm-8">
-          <h4>Ciudad Universitaria - 50% de descuento en la inscripción on line</h4>
-          <span class="row">
-            <strong>50% de descuento en la inscripción</strong> en todos los cursos ofrecidos de carácter ONLINE.
-            <br>
-            <strong>20% de descuento en todas las cuotas</strong> 20% de descuento en todas las cuotas sin certificación
-            de todos los cursos, ya sean ONLINE o PRESENCIAL.
-
-            <br>Estos descuentos no aplican para las clases particulares y/o cuotas que incluyen certificación
-            internacional.
-            <br>Con todos los medios de pago disponibles.
-            <br>No acumulable con otras promociones
-            <br>
-            ¿Cómo uso el descuento? Enviá un whatsapp a 54 9 261661123 indicando el código CIUDADUNIVERSITARIA y tus
-            datos.
-          </span>
-        </div>
-      </div>
-
-      <div class="col-sm-12">
-        <div class="image col-xs-6">
-          <img src="img/s-me-gusta-logo-1555962407.jpg" alt="Swiss Medical Gusta">
-        </div>
-        <div class="col-sm-offset-2 col-sm-8">
-          <h4>SMGUSTA - 50% de descuento en la inscripción on line</h4>
-          <span class="row">
-            <strong>50% de descuento en la inscripción</strong> en todos los cursos ofrecidos de carácter ONLINE.
-            <br>
-            <strong>20% de descuento en todas las cuotas</strong> 20% de descuento en todas las cuotas sin certificación
-            de todos los cursos, ya sean ONLINE o PRESENCIAL.
-
-            <br>Estos descuentos no aplican para las clases particulares y/o cuotas que incluyen certificación
-            internacional.
-            <br>Con todos los medios de pago disponibles.
-            <br>No acumulable con otras promociones
-            <br>
-            ¿Cómo uso el descuento? Enviá un whatsapp a 54 9 261661123 indicando el código SMGUSTA y tus datos.
-          </span>
-        </div>
-      </div>
-
-      <div class="col-sm-12">
-        <div class="image col-xs-6">
-          <img src="img/medife.jpeg" alt="Medife">
-        </div>
-        <div class="col-sm-offset-2 col-sm-8">
-          <h4>MEDIFE - 50% de descuento en la inscripción on line</h4>
-          <span class="row">
-            <strong>50% de descuento en la inscripción</strong> en todos los cursos ofrecidos de carácter ONLINE.
-            <br>
-            <strong>20% de descuento en todas las cuotas</strong> 20% de descuento en todas las cuotas sin certificación
-            de todos los cursos, ya sean ONLINE o PRESENCIAL.
-
-            <br>Estos descuentos no aplican para las clases particulares y/o cuotas que incluyen certificación
-            internacional.
-            <br>Con todos los medios de pago disponibles.
-            <br>No acumulable con otras promociones
-            <br>
-            ¿Cómo uso el descuento? Enviá un whatsapp a 54 9 261661123 indicando el código MEDIFE y tus datos.
-          </span>
-        </div>
-      </div>
-
-
-      <div class="col-sm-12">
-        <div class="image col-xs-6">
-          <img src="img/Ase nacional.png" alt="ASE">
-        </div>
-        <div class="col-sm-offset-2 col-sm-8">
-          <h4>ASE - 50% de descuento en la inscripción on line</h4>
-          <span class="row">
-            <strong>50% de descuento en la inscripción</strong> en todos los cursos ofrecidos de carácter ONLINE.
-            <br>
-            <strong>20% de descuento en todas las cuotas</strong> 20% de descuento en todas las cuotas sin certificación
-            de todos los cursos, ya sean ONLINE o PRESENCIAL.
-
-            <br>Estos descuentos no aplican para las clases particulares y/o cuotas que incluyen certificación
-            internacional.
-            <br>Con todos los medios de pago disponibles.
-            <br>No acumulable con otras promociones
-            <br>
-            ¿Cómo uso el descuento? Enviá un whatsapp a 54 9 261661123 indicando el código ASE y tus datos.
-          </span>
-        </div>
-      </div>
-
-
-
-    </div>
-
-    <b class="hr"></b>
-
-    <div class="row contact-telefono">
+     <!-- <div class="row contact-telefono">
       <h4 class="row"><i class="fab fa-whatsapp"></i> 2616611231</h4>
       </h4>
-      <h4 class="row"><i class="fas fa-map-marker-alt"></i>San Mart&iacute;n 1730 - Godoy Cruz - Mendoza</h4>
       <h4 class="row">
         <a href="mailto:info@witenglish.com.ar?Subject=Quiero%20conocer%20mas" target="_top">
           <i class="fas fa-envelope-square"> </i> info@witenglish.com.ar
         </a>
       </h4>
+    </div> -->
 
+   <div class="content" >
+    <!-- <button type="button" class="btn btn-info contacto" onclick="location.href='#contacto'">
+      ¡Contactanos!</button> -->
+   </div>
 
-      <br>
-      <h3 class="row">Are you a teacher?</h3>
-      <h4 class="row">
-        <a href="mailto:workwithus@witenglish.com.ar?Subject=I%20have%20lots%20to%20give" target="_top">
-          <i class="fas fa-hand-point-right"> </i>workwithus@witenglish.com.ar
+  <footer class="row">
+    <img id="guarda-inferior" src="img/guardainferior.png" alt="">
+
+    <div class="row footer-info">
+
+      <div class="social-networks">
+        <a href="https://wa.me/542616611231" data-toggle="popover" data-placement="top" data-trigger="hover" offset="5"
+          data-content="Encontranos en 261 6 611231" target="_blank">
+          <img src="img/whatsapp.svg" alt="">
+
         </a>
-      </h4>
-    </div>
-
-    <div class="content">
-      <button type="button" class="btn btn-info contacto" onclick="location.href='#contacto'">
-        ¡Contactanos!</button>
-    </div>
-
-    <div class="container">
-      <div class="map-container">
-        <iframe class="map-frame" id="gmap_canvas"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=(Wit%20English%20Learning%20Station)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-        </iframe>
-      </div>
-    </div>
-
-    <footer class="row">
-      <img id="guarda-inferior" src="img/guardainferior.png" alt="">
-
-      <div class="row footer-info">
-
-        <div class="social-networks">
-          <a href="https://wa.me/542616611231" data-toggle="popover" data-placement="top" data-trigger="hover"
-            offset="5" data-content="Encontranos en 261 6 611231" target="_blank">
-            <img src="img/whatsapp.svg" alt="">
-
-          </a>
-          <a href="https://www.facebook.com/WitEnglish/" data-toggle="popover" data-placement="top" data-trigger="hover"
-            offset="5" data-content="Click para visitarnos en facebook" target="_blank">
-            <img src="img/facebook.svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/wit_english82/" data-toggle="popover" data-placement="top"
-            data-trigger="hover" offset="5" data-content="click para visitarnos en instagram" target="_blank">
-            <img src="img/instagram.svg" alt="">
-          </a>
-          <div class="contact-design">
-            <a href="mailto:mdmarini@outlook.com?Subject=Me%20encanto%20tu%20diseño%20del%20Wit" target="_top">designed
-              by
-              Merengue Media</a>
-          </div>
+        <a href="https://www.facebook.com/WitEnglish/" data-toggle="popover" data-placement="top" data-trigger="hover"
+          offset="5" data-content="Click para visitarnos en facebook" target="_blank">
+          <img src="img/facebook.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/wit_english82/" data-toggle="popover" data-placement="top"
+          data-trigger="hover" offset="5" data-content="click para visitarnos en instagram" target="_blank">
+          <img src="img/instagram.svg" alt="">
+        </a>
+        <div class="contact-design">
+          <a href="mailto:mdmarini@outlook.com?Subject=Me%20encanto%20tu%20diseño%20del%20Wit" target="_top">designed
+            by
+            Merengue Media</a>
         </div>
-
       </div>
 
-
-    </footer>
+    </div>
+  </footer>
 
 </body>
 
@@ -593,36 +221,18 @@
   };
 
   function scrollFunction() {
-    var hello = document.getElementsByClassName("hello")[0];
     var logo = document.getElementsByClassName("logo")[0];
 
     if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
       document.getElementById("guarda-superior").style.top = "-4vw";
       document.getElementById("guarda-inferior").style.bottom = "-6vw";
       document.getElementsByClassName("social-networks")[0].style.right = "2%";
-      hello.classList.add("hide-left");
       logo.classList.add("scroll");
     } else {
       document.getElementById("guarda-superior").style.top = "0 ";
       document.getElementById("guarda-inferior").style.bottom = "0";
       document.getElementsByClassName("social-networks")[0].style.right = "15%";
-      hello.classList.remove("hide-left");
       logo.classList.remove("scroll");
-    }
-  }
-
-  function mostrarTextoCurso(idCurso) {
-    var button = document.getElementById(`${idCurso}-btn`);
-    var text = document.getElementById(`${idCurso}-texto`);
-
-    if (text.style.display === "inline") {
-      button.classList.remove("active");
-      button.innerHTML = "conocer +";
-      text.style.display = "none";
-    } else {
-      button.classList.add("active");
-      button.innerHTML = "mostrar -";
-      text.style.display = "inline";
     }
   }
 
@@ -643,36 +253,19 @@
   $(document).ready(function () {
     scrollFunction();
     $('[data-toggle="popover"]').popover();
-
-    $(document).scroll(function () {
+    
+    $(document).scroll(function() {
       var boton = $('#boton-inscribite-cursos');
       var miny = boton.parent().offset().top;
       var maxy = miny + boton.parent().height();
       var pos = $(this).scrollTop() + window.innerHeight / 2;
-      if (pos > miny && pos < maxy) {
+      if ( pos > miny && pos < maxy) {
         boton.fadeIn();
       } else {
         boton.fadeOut();
       }
     });
-
-    // Cursos - Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
   });
-
-  function abrirCurso(evt, cityName) {
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "flex";
-    evt.currentTarget.className += " active";
-  }
 </script>
-
+  
 </html>
